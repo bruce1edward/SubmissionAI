@@ -1,0 +1,101 @@
+ICH E3 GUIDELINE: STRUCTURE AND CONTENT OF CLINICAL STUDY REPORTS
+Effective Date: November 1, 1996
+Regulatory Body: ICH (International Council for Harmonisation)
+
+SECTION 1: INTRODUCTION AND SCOPE
+
+This guideline defines the structure and content of clinical study reports submitted to regulatory authorities as part of marketing applications. A clinical study report (CSR) is an integrated full report of an individual study of any therapeutic, prophylactic, or diagnostic agent conducted in human subjects. The CSR links the clinical and statistical description, presentations, and analyses in a single report.
+
+The guideline applies to all clinical studies conducted in support of regulatory submissions, including studies for new drug applications (NDAs), biologics license applications (BLAs), and investigational new drug (IND) amendments. Each CSR must be complete, stand-alone, and provide sufficient detail to allow regulatory reviewers to independently assess the study.
+
+SECTION 2: TITLE PAGE AND SYNOPSIS
+
+The report must begin with a title page identifying the study title, investigational product, indication, study phase, sponsor, date of report, and protocol number. The synopsis is a critical element and must not exceed approximately 3 pages. It should provide a brief statement of the study objectives, study design including number of subjects, duration, and endpoints, summary of results for primary and secondary efficacy endpoints, summary of safety findings, and overall conclusions.
+
+The synopsis must be written so a reviewer can understand the study without reading the full report. All key quantitative results with confidence intervals and p-values must appear in the synopsis.
+
+SECTION 3: TABLE OF CONTENTS AND ABBREVIATIONS
+
+A complete table of contents with page numbers is required. All abbreviations used in the report must be defined in a glossary. Abbreviations should be kept to a minimum and should not be introduced solely to shorten text.
+
+SECTION 4: ETHICS
+
+The report must include a statement confirming the study was conducted in accordance with the ethical principles originating from the Declaration of Helsinki and consistent with Good Clinical Practice (GCP). The names of all independent ethics committees (IECs) or institutional review boards (IRBs) that reviewed the protocol must be listed. Written confirmation of approval must be available.
+
+SECTION 5: INVESTIGATORS AND STUDY ADMINISTRATIVE STRUCTURE
+
+A list of all investigators with their qualifications, location, and the number of subjects enrolled must be provided. For multicenter studies, the organizational structure and role of any coordinating investigator must be described.
+
+SECTION 6: INTRODUCTION
+
+The introduction should describe the compound, the indication under investigation, and the rationale for the study design and endpoints chosen. It should also summarize the clinical development program context, including any prior clinical studies whose results informed the current study design.
+
+SECTION 7: STUDY OBJECTIVES
+
+Primary and secondary objectives must be clearly stated and must match those in the approved protocol. Any exploratory objectives must also be listed. The objectives should be stated in terms that clearly specify the hypothesis being tested, the comparison being made, and the population being studied.
+
+SECTION 8: INVESTIGATIONAL PLAN
+
+8.1 Overall Study Design and Plan
+The study design must be described in sufficient detail that an independent scientist could reconstruct the study. This includes the type of study (randomized, blinded, controlled, parallel, crossover), the treatment arms, the randomization ratio, the blinding method, and the planned sample size with justification.
+
+8.2 Study Population
+Entry criteria (inclusion and exclusion criteria) must be listed exactly as stated in the protocol. Any protocol amendments affecting eligibility criteria must be described separately with their effective dates.
+
+8.3 Treatments
+The investigational product and comparator formulations, doses, routes of administration, and treatment regimen must be described. Dose modifications and rules for discontinuation must be specified. Drug accountability procedures must be summarized.
+
+8.4 Efficacy Variables
+All efficacy variables (primary, secondary, exploratory) must be defined precisely. Rating scales must be described and validated references provided. The timing and methods of assessment must match the protocol.
+
+8.5 Safety Variables
+All safety assessments (adverse events, laboratory parameters, vital signs, ECGs, physical examinations) must be described. Adverse event definitions, including serious adverse events, must be provided. The MedDRA coding dictionary version used must be stated.
+
+8.6 Statistical Methods
+This section must describe all planned analyses exactly as specified in the Statistical Analysis Plan (SAP), including the primary analysis method, the handling of missing data, any sensitivity analyses, and the approach to multiplicity. If the SAP was amended after the study start, this must be noted with the date of amendment.
+
+SECTION 9: STUDY PATIENTS
+
+This section provides a complete accounting of all subjects screened, enrolled, randomized, treated, and completing or discontinuing the study. A disposition table or CONSORT-style diagram must be included. Reasons for each discontinuation must be provided at the subject level.
+
+Protocol deviations must be listed and categorized as major or minor. The impact of deviations on the analysis population must be assessed.
+
+SECTION 10: EFFICACY EVALUATION
+
+10.1 Data Sets Analyzed
+The analysis populations (e.g., intent-to-treat, per-protocol, safety) must be defined and the number of subjects in each must be stated. Any differences between planned and actual analysis populations must be explained.
+
+10.2 Efficacy Results
+Results for all primary and secondary efficacy endpoints must be presented. Point estimates with 95% confidence intervals and p-values must be provided. For time-to-event endpoints, Kaplan-Meier curves with numbers at risk must be included.
+
+Results must be presented in the order pre-specified in the SAP. Post-hoc analyses must be clearly labeled as such and interpreted cautiously.
+
+10.3 Subgroup Analyses
+All pre-specified subgroup analyses must be presented with results for each subgroup and the interaction test p-value. Post-hoc subgroup analyses must be clearly identified. Investigators should avoid over-interpretation of subgroup findings without pre-specified hypotheses.
+
+SECTION 11: SAFETY EVALUATION
+
+11.1 Extent of Exposure
+The degree to which subjects were exposed to the investigational product (duration, cumulative dose) must be summarized.
+
+11.2 Adverse Events
+All adverse events must be listed by system organ class and preferred term. The incidence of adverse events must be tabulated by treatment group. Serious adverse events must be listed individually with narratives for deaths and any unexpected serious adverse reactions.
+
+11.3 Deaths, Serious Adverse Events, and Significant Adverse Events
+All deaths occurring during the study or within a defined follow-up period must be listed with narratives. Serious adverse events must be analyzed separately from non-serious adverse events. Any dose-response relationship for adverse events should be explored.
+
+11.4 Clinical Laboratory Evaluation
+Shift tables from baseline, tables of values outside reference ranges, and summaries of potentially clinically significant values must be provided. Changes in laboratory values over time should be displayed graphically.
+
+11.5 Vital Signs and Other Findings
+Any clinically meaningful changes in vital signs, ECG parameters, or other safety assessments must be presented.
+
+SECTION 12: DISCUSSION AND OVERALL CONCLUSIONS
+
+The discussion must integrate all efficacy and safety findings in the context of the study objectives. The clinical significance of observed effects must be assessed. Limitations of the study must be acknowledged. The overall conclusions must directly address the primary and secondary objectives.
+
+SECTION 13: APPENDICES
+
+Required appendices include the protocol and amendments, sample case report forms, investigator information, study subjects who discontinued, individual patient data for serious adverse events, listing of all adverse events by subject, publications arising from the study, statistical methods and computations, and any other important data.
+
+Module 5 of the eCTD places clinical study reports under specific heading numbers aligned with the ICH M4E CTD format. Each individual study report must be filed in the appropriate heading based on study type. Summary documents providing integrated analysis across studies are placed in Module 2.

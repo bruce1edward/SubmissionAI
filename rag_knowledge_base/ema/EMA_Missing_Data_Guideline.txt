@@ -1,0 +1,68 @@
+EMA GUIDELINE ON MISSING DATA IN CONFIRMATORY CLINICAL TRIALS
+Effective Date: July 2, 2010
+Regulatory Body: EMA (European Medicines Agency)
+
+SECTION 1: INTRODUCTION
+
+This guideline provides recommendations on the handling of missing data in confirmatory clinical trials submitted to the European Medicines Agency. Missing data is an almost universal problem in clinical trials and, if not handled appropriately, can introduce bias that undermines the validity of the primary efficacy analysis. The guideline emphasizes that the best strategy for handling missing data is to minimize it through good trial design and conduct, and that all methods for handling missing data rest on assumptions that should be pre-specified and subjected to sensitivity analyses.
+
+SECTION 2: CLASSIFICATION OF MISSING DATA MECHANISMS
+
+2.1 Missing Completely at Random (MCAR)
+Data are said to be Missing Completely at Random (MCAR) if the probability of missingness is independent of both the observed and unobserved values of the outcome variable. In other words, missingness is unrelated to any study variable. MCAR is the least restrictive and least plausible assumption for clinical trial data, where dropouts are frequently related to treatment tolerability or lack of efficacy.
+
+2.2 Missing at Random (MAR)
+Data are Missing at Random (MAR) if the probability of missingness is independent of the unobserved values of the outcome variable, conditional on the observed values. Under MAR, the reason for missing data can be explained by observed data (e.g., a subject drops out because of an adverse event that was recorded in the observed data, not because of a poor but unobserved future outcome). Most imputation methods used in regulatory submissions, including multiple imputation, are valid under MAR.
+
+2.3 Missing Not at Random (MNAR)
+Data are Missing Not at Random (MNAR) if the probability of missingness depends on the unobserved values even after conditioning on observed data. MNAR occurs when subjects drop out because of the very outcome being measured (e.g., subjects with the worst unseen outcomes are more likely to drop out). MNAR is the most problematic mechanism because standard analysis methods will produce biased estimates. Sensitivity analyses must address the possibility of MNAR missing data.
+
+SECTION 3: PREVENTION OF MISSING DATA
+
+3.1 Design-Based Prevention
+The most effective approach to missing data is prevention. Trials should be designed to minimize dropout rates by: choosing realistic assessment schedules that minimize subject burden, selecting appropriate treatment durations, providing for flexibility in dose modifications rather than discontinuation, and using strategies to maintain subject engagement throughout the trial. Unrealistically burdensome protocols increase dropout rates, which increases the risk of bias from missing data.
+
+3.2 Operational Prevention
+During trial conduct, sponsors must implement systematic procedures to minimize missing assessments. These include: proactive follow-up of subjects who miss visits, ensuring that subjects who discontinue treatment are still followed for safety and efficacy outcomes where possible, and using multiple contact methods to minimize loss to follow-up.
+
+3.3 Planned Follow-Up After Discontinuation
+Protocols should specify that subjects who discontinue study medication are followed for the primary endpoint assessments for the planned study duration, or until a pre-specified stopping criterion is met. This follows the intent-to-treat principle: measurement of the outcome should continue even after treatment discontinuation.
+
+SECTION 4: ANALYSIS METHODS AND THEIR ASSUMPTIONS
+
+4.1 Complete Case Analysis
+Complete case analysis (CCA) excludes subjects with missing outcome data and analyzes only those subjects with complete data. CCA is valid only under MCAR, which is rarely plausible. CCA is biased under MAR when the missingness is related to treatment or baseline covariates, even if those covariates are observed.
+
+4.2 Last Observation Carried Forward (LOCF)
+LOCF imputes the missing outcome with the last observed value for that subject. LOCF assumes that the outcome remains constant after dropout, which is implausible for most clinical conditions where disease progression or recovery would be expected. LOCF tends to underestimate treatment differences in progressive diseases and overestimate them in improving conditions, depending on the pattern of dropout. Regulatory agencies no longer consider LOCF an acceptable primary analysis for most indications.
+
+4.3 Non-Responder Imputation (NRI)
+NRI treats all subjects with missing binary outcome data (e.g., response vs. non-response) as non-responders. NRI is a conservative approach that is appropriate when the estimand of interest reflects the treatment effect under the assumption that subjects who drop out would not respond to treatment. NRI is commonly used in regulatory submissions for binary endpoints (e.g., ACR20 response in rheumatology, PASI 75 in dermatology) when the treatment policy strategy is not used.
+
+4.4 Multiple Imputation (MI)
+Multiple imputation creates multiple complete datasets by imputing missing values from their predictive distribution conditional on observed data. Analysis is performed separately on each imputed dataset and results are combined using Rubin's rules. MI under MAR assumptions is a principled and widely accepted approach for handling missing continuous outcomes. The imputation model should include all relevant covariates, including baseline characteristics, stratification factors, and observed post-baseline measurements.
+
+4.5 Mixed Model for Repeated Measures (MMRM)
+MMRM is a maximum likelihood-based approach that models all observed post-baseline measurements simultaneously. It is valid under MAR and is generally preferred to LOCF for longitudinal continuous outcomes. MMRM uses all available observed data and does not require imputation of missing values.
+
+SECTION 5: SENSITIVITY ANALYSES
+
+5.1 Importance of Sensitivity Analyses
+No analysis of clinical trial data can be free of assumptions about the missing data mechanism. Sensitivity analyses are therefore essential: they test whether the conclusions of the primary analysis are robust to alternative assumptions about missing data.
+
+5.2 Pattern-Mixture Models
+Pattern-mixture models stratify subjects by their missingness pattern and model the distribution of outcomes within each stratum. The delta-adjustment method is a practical implementation: it applies a penalty delta to the imputed values for subjects who drop out, shifting their imputed outcomes in a pessimistic direction by a pre-specified amount. The tipping point is the value of delta at which the primary conclusion is overturned.
+
+5.3 Reference-Based Imputation
+Reference-based imputation methods (e.g., Jump to Reference, Copy Reference) impute missing values for treated subjects using the observed data from the control arm, under the assumption that subjects who discontinue the experimental treatment will subsequently experience outcomes consistent with the control treatment. These methods are clinically interpretable and pre-specifiable.
+
+5.4 Tipping Point Analysis
+The tipping point is the value of the MNAR parameter (e.g., the delta in a delta-adjustment) at which the primary efficacy conclusion changes from statistically significant to non-significant. A large tipping point relative to a clinically plausible MNAR departure supports the robustness of the primary analysis. A small tipping point raises concerns about the reliability of the primary conclusion.
+
+SECTION 6: PRE-SPECIFICATION OF MISSING DATA STRATEGY
+
+The approach to handling missing data must be pre-specified in the protocol and the SAP before the blind is broken. The primary analysis method, the assumptions underlying the method, the imputation model (if applicable), and all sensitivity analyses must be specified before any unblinded data are reviewed. Post-hoc changes to the missing data handling strategy are considered potential sources of bias and will be scrutinized by regulatory reviewers.
+
+SECTION 7: REPORTING OF MISSING DATA
+
+The clinical study report must include: the number and percentage of subjects with missing primary endpoint data by treatment group, the reason for missing data classified by category (withdrawal of consent, adverse event, lack of efficacy, lost to follow-up, other), an assessment of whether the observed pattern of missing data is consistent with the MCAR/MAR assumptions, results of the primary analysis and all pre-specified sensitivity analyses, and a discussion of the impact of missing data on the reliability of the primary analysis conclusion.

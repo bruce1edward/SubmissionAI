@@ -1,0 +1,63 @@
+FDA GUIDANCE: ADAPTIVE DESIGNS FOR CLINICAL TRIALS OF DRUGS AND BIOLOGICS
+Effective Date: November 1, 2019
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 1: INTRODUCTION
+
+Adaptive designs are clinical trial designs that use accumulating trial data to prospectively plan modifications to one or more aspects of the trial design without undermining the validity or integrity of the trial. FDA's guidance identifies two categories of adaptive designs based on the level of concern about Type I error inflation and operational bias: well-understood and less well-understood adaptive designs.
+
+Adaptive designs offer potential advantages over traditional fixed designs, including the ability to detect treatment effects with fewer subjects, to identify optimal doses, to stop trials early when evidence is compelling, and to adjust enrollment criteria based on interim findings. However, poorly designed or implemented adaptive modifications can introduce bias, inflate Type I error, or compromise the integrity of the blinded data.
+
+SECTION 2: GENERAL PRINCIPLES
+
+2.1 Pre-Specification is Essential
+The most important principle governing adaptive designs is that all adaptive features must be fully pre-specified before the trial begins. Pre-specification means that the adaptation rules, the decision criteria, the timing of interim analyses, the scope of possible modifications, and the statistical methods for controlling Type I error are all defined in the protocol and SAP before enrollment begins. Post-hoc adaptations are not acceptable.
+
+2.2 Control of Type I Error
+Most adaptive modifications create potential for Type I error inflation if not properly accounted for. Sponsors must demonstrate that the overall Type I error for the primary hypothesis test is controlled at the pre-specified alpha level (typically 0.025 one-sided or 0.05 two-sided). Methods for Type I error control include group sequential methods, alpha spending functions, conditional power calculations, and simulation-based approaches.
+
+2.3 Operational Integrity
+Adaptive designs that use unblinded interim data create the risk of operational bias if the adaptation decision-making process is not adequately controlled. Access to unblinded interim data must be restricted to a firewall team (independent statisticians) or a Data Safety Monitoring Board (DSMB). Sponsor personnel responsible for ongoing trial operations should not have access to unblinded interim data.
+
+SECTION 3: WELL-UNDERSTOOD ADAPTIVE DESIGNS
+
+3.1 Sample Size Re-Estimation Based on Blinded Data
+Sample size re-estimation using blinded nuisance parameters (e.g., pooled variance, control event rate) is well-understood and generally acceptable without pre-planned Type I error adjustments, provided the re-estimation does not use information about the treatment effect estimate.
+
+3.2 Group Sequential Designs
+Group sequential designs pre-specify one or more interim analyses at which the trial may be stopped for efficacy or futility based on pre-specified stopping rules. Alpha spending functions (e.g., O'Brien-Fleming, Pocock, Lan-DeMets) distribute the Type I error across interim and final analyses. The stopping boundaries must be pre-specified and the decision to stop must follow the pre-specified rules exactly.
+
+3.3 Adaptive Randomization
+Adaptive randomization that balances treatment allocation based on stratification factors (covariate-adaptive randomization) is well-understood. Response-adaptive randomization that shifts allocation based on interim efficacy results requires more careful justification and analysis.
+
+SECTION 4: LESS WELL-UNDERSTOOD ADAPTIVE DESIGNS
+
+4.1 Seamless Phase 2/3 Designs
+Seamless Phase 2/3 designs combine dose selection (Phase 2 objective) and confirmation (Phase 3 objective) in a single trial. After an interim analysis, a dose or doses are selected and the trial continues to enroll subjects at the selected dose(s). Confirmatory analysis combines data from both stages. These designs can save time and sample size but require complex statistical methods to control Type I error.
+
+4.2 Adaptive Enrichment Designs
+Adaptive enrichment designs allow modification of the enrolled population based on interim analysis results. For example, a trial might begin enrolling a broad population and, based on interim biomarker data, restrict subsequent enrollment to a pre-specified biomarker-positive subgroup. The pre-specified decision rule for enrichment must be based on a surrogate marker with a well-established relationship to clinical outcome.
+
+4.3 Adaptive Dose-Finding
+Designs that use interim data to modify the dose escalation or expansion schedule (e.g., model-based dose escalation designs such as the Continual Reassessment Method) are increasingly common in Phase 1 and early Phase 2. These designs require simulation to demonstrate operating characteristics under plausible scenarios.
+
+SECTION 5: STATISTICAL SIMULATION REQUIREMENTS
+
+For less well-understood adaptive designs and for some group sequential designs, FDA expects sponsors to provide simulation results demonstrating: Type I error control under the null hypothesis, power under plausible alternative hypotheses, operating characteristics of the adaptation rules, and robustness of the design to violations of key assumptions.
+
+Simulations should be conducted under a range of scenarios including the null hypothesis, the alternative hypothesis specified in the power calculation, and scenarios with parameter values intermediate between null and alternative. At least 10,000 simulation replicates per scenario are typically needed for reliable estimates of Type I error and power.
+
+SECTION 6: DATA SAFETY MONITORING BOARDS (DSMB)
+
+6.1 Role of the DSMB
+An independent DSMB is strongly recommended for all trials with adaptive interim analyses that use unblinded data. The DSMB: reviews unblinded interim data, makes recommendations about trial continuation or modification, ensures that pre-specified stopping rules are followed, and monitors for unexpected safety signals.
+
+6.2 DSMB Charter
+The DSMB charter must be finalized before the first interim analysis. It must specify: DSMB membership and independence, the frequency and timing of DSMB reviews, the specific stopping rules for efficacy and futility, the safety stopping rules, procedures for communicating DSMB recommendations, and the firewall arrangements separating DSMB activities from sponsor operations.
+
+6.3 Adaptive Modifications Recommended by the DSMB
+DSMB recommendations for adaptive modifications should follow pre-specified rules. Modifications not covered by the pre-specified adaptation rules require sponsor-FDA discussion before implementation and may require a protocol amendment.
+
+SECTION 7: PRE-SUBMISSION INTERACTIONS WITH FDA
+
+Sponsors planning adaptive designs for confirmatory trials are strongly encouraged to discuss the design with FDA before implementing it. For Phase 3 adaptive designs, a Type B End-of-Phase 2 meeting or a Type C meeting should include a detailed briefing document describing the adaptive features, the pre-specification plan, the Type I error control method, and the simulation results. Early feedback from FDA can prevent expensive re-design at a later stage.

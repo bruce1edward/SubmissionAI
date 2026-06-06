@@ -1,0 +1,10 @@
+# Core
+streamlit
+plotly
+pandas
+openai
+
+# RAG (full hybrid mode — install for dense retrieval + BM25 + cross-encoder reranking)
+chromadb
+sentence-transformers
+rank-bm25
