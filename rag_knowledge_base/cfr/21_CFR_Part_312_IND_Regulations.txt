@@ -1,0 +1,84 @@
+21 CFR PART 312: INVESTIGATIONAL NEW DRUG APPLICATION
+Effective Date: June 20, 1987 (with subsequent amendments)
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 312.1: SCOPE
+
+This part governs the conditions under which an investigational new drug (IND) application must be submitted to FDA and describes the procedures for obtaining authorization to conduct clinical investigations of drugs and biological products in human subjects. An IND is required before clinical trials may be conducted in the United States unless an exemption applies.
+
+SECTION 312.2: APPLICABILITY
+
+An IND is required for any clinical investigation of a drug in human subjects in the United States unless: (a) the investigation is exempt under section 312.2(b), (b) the investigation is of a marketed drug and meets the conditions specified in 312.2(f), or (c) the investigation involves certain cosmetic products. The IND requirement covers all phases of clinical investigation: Phase 1, Phase 2, and Phase 3 studies.
+
+SECTION 312.20: REQUIREMENT FOR AN IND
+
+(a) A sponsor who intends to conduct a clinical investigation with an investigational new drug shall submit an IND to FDA before commencing such investigation.
+
+(b) A sponsor shall submit a separate IND for any clinical investigation conducted to support a new intended use of a marketed drug if a new IND would be necessary.
+
+(c) A sponsor shall not begin a clinical investigation until the IND for the investigation is in effect under 312.40.
+
+SECTION 312.21: PHASES OF AN INVESTIGATION
+
+312.21(a) Phase 1 Studies
+Phase 1 studies are initial studies to determine the metabolism and pharmacologic actions of the drug in humans, the side effects associated with increasing doses, and, if possible, to gain early evidence on effectiveness. These studies are designed to determine the maximum tolerated dose and the dose-limiting toxicities. Phase 1 typically involves 20 to 80 subjects.
+
+312.21(b) Phase 2 Studies
+Phase 2 studies are controlled clinical investigations of the drug for a specified indication or indications. Phase 2 studies are performed to evaluate the effectiveness of the drug for the indication and to determine the common short-term side effects and risks associated with the drug. Phase 2 typically involves several hundred subjects and should include adequate controls, well-defined objectives, and a dosing schedule based on Phase 1 findings.
+
+312.21(c) Phase 3 Studies
+Phase 3 studies are expanded controlled and uncontrolled trials performed after preliminary evidence suggesting effectiveness of the drug has been obtained. Phase 3 studies are intended to gather the additional information about effectiveness and safety that is needed to evaluate the overall benefit-risk relationship of the drug and to provide an adequate basis for physician labeling. Phase 3 typically involves several hundred to several thousand subjects. These studies form the primary evidence for NDA/BLA approval.
+
+SECTION 312.23: IND CONTENT AND FORMAT
+
+An IND shall contain the following:
+
+(a) Cover sheet (Form FDA 1571): Includes sponsor name and address, phone number, date of submission, number of investigational subjects, and commitments by the sponsor.
+
+(b) Table of contents: A complete and accurate table of contents.
+
+(c) Introductory statement and general investigational plan: A brief introductory statement giving the name and all active ingredients of the investigational drug, the drug's pharmacological class, the structural formula, the formulation of the dosage form(s), the route of administration, the broad objectives and planned duration of the proposed clinical investigation, and a brief summary of previous human experience with the drug, with reference to other IND's if pertinent.
+
+(d) Investigator's brochure: If the investigation involves an investigational drug, a copy of the investigator's brochure.
+
+(e) Protocol(s): A protocol for each planned study must be included. The protocol for Phase 2 and Phase 3 studies must include: the objectives and purpose of the study, the name and address of each investigator, the name and address of each IRB reviewing the study, the drug to be administered (dose and regimen), the duration of the investigation, a description of the procedures to be used to monitor subjects, the number of subjects to be enrolled, and the criteria for subject selection.
+
+(f) Chemistry, manufacturing, and controls (CMC) information: As specified in 312.23(a)(7) and described in the CMC guidance documents.
+
+(g) Pharmacology and toxicology information: An integrated summary of the pharmacological and toxicological data obtained in laboratory animals and in vitro studies. The summary must include all animal pharmacology data and the results of all acute, subacute, chronic, and reproductive toxicology studies conducted with the drug.
+
+(h) Previous human experience: An integrated summary of all previous human experience with the drug, including results from clinical trials outside the United States and from published literature.
+
+(i) Additional information: Any other additional information that might be important for FDA's review, such as the results of special preclinical studies or information regarding bioavailability.
+
+SECTION 312.25: INFORMATION AGENCY MAY REQUIRE
+
+FDA may request that the sponsor submit additional information or data that the agency considers needed to review the IND. Failure to provide requested information within the specified time period may result in the IND being placed on clinical hold.
+
+SECTION 312.31: INFORMATION AMENDMENTS
+
+(a) A sponsor shall report to FDA substantial new information about: (1) Information about the safety of the drug identified from clinical and nonclinical studies that suggests a significant risk to human subjects; (2) information that substantially changes the basis for conducting the proposed studies.
+
+(b) An information amendment may be submitted as needed. An information amendment to an IND for a Phase 2 or Phase 3 clinical investigation is required within 30 days of the completion of any Phase 1 study.
+
+SECTION 312.32: IND SAFETY REPORTS
+
+(a) A sponsor shall notify FDA and all participating investigators in a written IND safety report of any adverse experience associated with use of the drug that is both serious and unexpected. The sponsor shall report this information as soon as possible and in no event later than 15 calendar days after the sponsor's initial receipt of the information.
+
+(b) Fatal or life-threatening suspected adverse reactions that are unexpected must be reported as soon as possible but in no event later than 7 calendar days after the sponsor's initial receipt of the information.
+
+SECTION 312.33: ANNUAL REPORTS
+
+A sponsor shall submit an annual report to the IND within 60 days of the anniversary date of the effective date of the IND. The annual report shall include a brief summary of the status of each study in progress and each study completed during the previous year, a summary of IND safety reports submitted during the previous year, and a list of subjects who died during participation in the investigation.
+
+SECTION 312.50: GENERAL RESPONSIBILITIES OF SPONSORS
+
+A sponsor is responsible for selecting qualified investigators, providing them with the information they need to conduct an investigation properly, ensuring proper monitoring of the investigation, ensuring that FDA and all participating investigators are promptly informed of significant new adverse effects or risks, and ensuring that the investigation is conducted in accordance with the general investigational plan and protocols.
+
+SECTION 312.55: INFORMING INVESTIGATORS
+
+A sponsor shall keep each participating investigator informed of new observations discovered by or reported to the sponsor about the drug, particularly with respect to adverse effects and safe use, and shall revise the investigator's brochure to reflect new safety information as it becomes available.
+
+SECTION 312.60: GENERAL RESPONSIBILITIES OF INVESTIGATORS
+
+An investigator is responsible for ensuring that an investigation is conducted according to the signed investigator statement, the investigational plan, and applicable regulations; for protecting the rights, safety, and welfare of subjects under the investigator's care; and for control of drugs under investigation.

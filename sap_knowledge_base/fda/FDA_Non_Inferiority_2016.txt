@@ -1,0 +1,54 @@
+FDA GUIDANCE: NON-INFERIORITY CLINICAL TRIALS TO ESTABLISH EFFECTIVENESS
+Document Code: FDA-NI
+Effective Date: November 2016
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 1: INTRODUCTION
+
+Non-inferiority (NI) trials are used when it is not ethical or feasible to use a placebo control and when the goal is to show that a new treatment retains an acceptable fraction of the efficacy of an active comparator. Unlike superiority trials, NI trials test the null hypothesis that the new treatment is inferior to the active control by more than a pre-specified margin. This guidance describes the requirements for NI margin justification, analysis, and pre-specification.
+
+SECTION 2: THE NON-INFERIORITY MARGIN
+
+2.1 M1 and M2
+The NI margin analysis involves two quantities: M1 and M2. M1 is the entire effect of the active comparator relative to placebo, estimated from historical trials. M2 is the largest clinically acceptable difference by which the new treatment may be inferior to the active comparator. M2 must be less than M1 to ensure that the new treatment is better than placebo. Both M1 and M2 must be pre-specified in the protocol and SAP before the trial begins.
+
+2.2 Justification of M1
+M1 is established from the historical evidence base for the active comparator — typically a meta-analysis of placebo-controlled trials of the active comparator in the same or similar indication. M1 should be estimated conservatively (e.g., as the lower confidence bound of the historical effect) to account for uncertainty. The historical trials used to estimate M1 must be described in detail in the SAP, including inclusion/exclusion criteria, effect sizes, confidence intervals, and the rationale for their applicability to the current trial.
+
+2.3 Justification of M2
+M2 is a clinical judgment. It must be small enough to ensure that the new treatment preserves a clinically meaningful fraction of the active comparator's effect. FDA guidance recommends that M2 preserve at least 50% of M1 (i.e., M2 ≤ M1/2) in most cases, though higher retention fractions may be required in therapeutic areas where the entire effect of the active comparator is clinically important.
+
+2.4 Pre-Specification
+Both M1 and M2 must be pre-specified in the protocol or a protocol amendment before data are collected. Retrospective specification of the NI margin after seeing the data undermines the confirmatory nature of the trial and will not be accepted by FDA as evidence of effectiveness.
+
+SECTION 3: THE CONSTANCY ASSUMPTION
+
+3.1 Definition
+The constancy assumption states that the effect of the active comparator relative to placebo in the current NI trial is the same as in the historical placebo-controlled trials used to establish M1. If this assumption is violated — for example, because the current patient population is substantially different, the standard of care has changed, or the active comparator is used at a different dose — the NI margin may be inflated and the NI conclusion may not imply that the new treatment is better than placebo.
+
+3.2 Assessment in the SAP
+The SAP must include an assessment of the constancy assumption. This should address: whether the current trial population is comparable to the historical trials (demographics, disease severity, prior treatment, biomarker profile), whether background therapy has changed, whether the active comparator is used at the same dose and schedule, and whether there are any other factors that might affect the comparator's effect size.
+
+3.3 Sensitivity Analyses for the Constancy Assumption
+When the constancy assumption is uncertain, sensitivity analyses should be pre-specified that assume a reduced active comparator effect in the current trial. For example, if historical trials suggest M1 = 10% absolute risk reduction but there is uncertainty about whether this applies to the current population, a sensitivity analysis assuming M1 = 7% should be pre-specified.
+
+SECTION 4: ASSAY SENSITIVITY
+
+Assay sensitivity is the ability of a trial to distinguish an effective treatment from an ineffective one. In NI trials, assay sensitivity cannot be directly demonstrated (because there is no placebo arm), but it must be established indirectly through: the quality and relevance of the historical evidence for M1, the similarity of the current trial to the historical trials (constancy assumption), the quality of the trial conduct (protocol adherence, low missing data rates), and the consistency of results across pre-specified subgroups.
+
+A trial with poor assay sensitivity (e.g., high dropout rates, substantial protocol deviations, or a historical evidence base that is outdated or not applicable) will produce an inconclusive NI result even if the true NI hypothesis holds. The SAP must describe the measures taken to ensure assay sensitivity.
+
+SECTION 5: ANALYSIS METHODS FOR NON-INFERIORITY
+
+5.1 Per-Protocol and ITT Analyses
+In superiority trials, the ITT analysis is primary because it is conservative (dilution of the treatment effect makes it harder to declare superiority). In NI trials, the ITT analysis is not necessarily conservative: any dilution of the treatment effect difference makes NI easier to claim. Therefore, both the per-protocol (PP) and the ITT analyses are required, and NI must be demonstrated in both. The SAP must explicitly pre-specify both analyses and the rule for declaring NI (i.e., NI is claimed only if both ITT and PP analyses meet the NI criterion).
+
+5.2 Confidence Interval Approach
+NI is typically assessed by a confidence interval approach: NI is claimed if the entire 95% (or 97.5% one-sided) confidence interval for the treatment difference lies within the NI margin. The direction of the confidence interval and the definition of "inferior" must be clear from the SAP (e.g., "NI is claimed if the upper bound of the 95% CI for the difference [new minus comparator] is less than M2 = +X%").
+
+5.3 Switching to Superiority
+If the NI analysis is successful, the SAP may pre-specify a formal test of superiority using the same dataset. This is acceptable and controls the Type I error rate because superiority is a more stringent criterion than NI. The SAP must explicitly pre-specify the order: NI first, then superiority. A sponsor cannot test superiority first and then, if it fails, claim NI — this constitutes an undisclosed analysis that inflates the Type I error rate.
+
+SECTION 6: CONSISTENCY REQUIREMENTS BETWEEN SAP AND CSR
+
+The CSR must report the NI margin (M1 and M2), their justification, and the primary analysis results. The SAP must be the authoritative source for M1 and M2. If the CSR reports different margin values from the SAP, or if the CSR applies a one-sided CI in the opposite direction from the SAP, this is a critical compliance finding. Additionally, if the SAP pre-specifies both ITT and PP analyses as required for NI, but the CSR reports only the ITT analysis, the NI claim is not supportable.

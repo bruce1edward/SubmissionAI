@@ -1,0 +1,67 @@
+21 CFR PART 11: ELECTRONIC RECORDS; ELECTRONIC SIGNATURES
+Effective Date: August 20, 1997
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 11.1: SCOPE
+
+This part establishes the criteria under which FDA considers electronic records, electronic signatures, and handwritten signatures executed to electronic records to be trustworthy, reliable, and generally equivalent to paper records and handwritten signatures executed on paper. This part applies to any records in electronic format that are created, modified, maintained, archived, retrieved, or transmitted under any records requirements set forth in FDA regulations, including all clinical trial records, electronic data capture (EDC) records, safety reports, and regulatory submissions stored or transmitted electronically.
+
+SECTION 11.2: IMPLEMENTATION
+
+Any system that creates, modifies, maintains, archives, retrieves, or transmits electronic records that are required by FDA regulations must comply with 21 CFR Part 11 unless a specific exemption applies. This includes Electronic Data Capture (EDC) systems used in clinical trials, laboratory information management systems (LIMS), pharmacovigilance databases, and electronic regulatory submission systems.
+
+SECTION 11.10: CONTROLS FOR CLOSED SYSTEMS
+
+Persons who use closed systems to create, modify, maintain, or transmit electronic records shall employ procedures and controls to ensure the authenticity, integrity, and confidentiality of electronic records and to ensure that the signer cannot readily repudiate the signed record as not genuine. Such procedures and controls shall include:
+
+(a) Validation: Systems must be validated to ensure accuracy, reliability, consistent intended performance, and the ability to discern invalid or altered records. Validation documentation must be available and must demonstrate that the system performs as intended under all anticipated conditions of use.
+
+(b) Audit Trail: Computer-generated, time-stamped audit trails must be created to independently record the date and time of operator entries and actions that create, modify, or delete electronic records. Audit trails must be computer-generated and must not be able to be modified by the user. Record changes must not obscure previously recorded information. Audit trails must be retained for the same period of time as the records they apply to.
+
+(c) Access Controls: Systems must implement access controls to ensure that only authorized individuals access and use the system. Access controls must include unique user identification (user IDs), passwords or biometric identifiers, authority checks to ensure that only authorized users can perform specific operations, and device checks to determine the validity of the source of data input. Shared user IDs are not acceptable.
+
+(d) Operational System Checks: The system must check that required operational steps are performed in proper sequence and that no required steps are omitted.
+
+(e) Authority Checks: The system must enforce authority controls so that only authorized users can use the system, electronically sign records, access the operation or computer system input or output device, alter a record, or perform operations at hand.
+
+(f) Device Checks: The system must use device checks to ensure that only authorized devices are used as input or output.
+
+(g) Personnel Training: All persons who develop, maintain, or use electronic record/electronic signature systems must have the education, training, and experience to perform their assigned tasks. Training records must be maintained.
+
+(h) Account Management: Written policies must exist governing the use and loss of access tokens or other identifiers and must be available to employees. Personnel must be held accountable for actions initiated under their electronic signatures.
+
+(i) System Documentation: Adequate documentation controls must be in place to ensure that documentation is reviewed and approved by an authorized individual before use.
+
+SECTION 11.30: CONTROLS FOR OPEN SYSTEMS
+
+Persons who use open systems to create, modify, maintain, or transmit electronic records shall employ procedures and controls that meet the requirements of section 11.10 plus additional controls to ensure record authenticity, integrity, and confidentiality. Additional measures may include document encryption and the use of appropriate digital signature standards.
+
+SECTION 11.50: SIGNATURE MANIFESTATIONS
+
+(a) Signed electronic records shall contain information associated with the signing that clearly indicates: (1) the printed name of the signer; (2) the date and time when the signature was executed; and (3) the meaning (such as review, approval, responsibility, or authorship) associated with the signature.
+
+(b) The items identified in paragraphs (a)(1), (a)(2), and (a)(3) of this section shall be subject to the same controls as for electronic records and shall be included as part of any human readable form of the electronic record (such as electronic display or printout).
+
+SECTION 11.70: SIGNATURE/RECORD LINKING
+
+Electronic signatures and handwritten signatures executed to electronic records shall be linked to their respective electronic records to ensure that the signatures cannot be excised, copied, or otherwise transferred to falsify an electronic record by ordinary means.
+
+SECTION 11.100: GENERAL REQUIREMENTS FOR ELECTRONIC SIGNATURES
+
+(a) Each electronic signature shall be unique to one individual and shall not be reused by, or reassigned to, anyone else.
+
+(b) Before an organization establishes, assigns, certifies, or otherwise sanctions an individual's electronic signature, or any element of such electronic signature, the organization shall verify the identity of the individual.
+
+(c) Persons using electronic signatures shall, prior to or at the time of such use, certify to the agency that the electronic signatures in their system, used on or after August 20, 1997, are intended to be the legally binding equivalent of traditional handwritten signatures.
+
+SECTION 11.200: ELECTRONIC SIGNATURE COMPONENTS AND CONTROLS
+
+Electronic signatures that are not based upon biometrics shall: (1) employ at least two distinct identification components such as an identification code and password; (2) when an individual executes a series of signings during a single, continuous period of controlled system access, use the first signing at least two distinct identification components and one of the identification components for subsequent signings; and (3) be used only by their genuine owners.
+
+SECTION 11.300: CONTROLS FOR IDENTIFICATION CODES AND PASSWORDS
+
+Persons who use electronic signatures based upon use of identification codes in combination with passwords shall employ controls to ensure their security and integrity. Such controls shall include: (a) Maintaining the uniqueness of each combined identification code and password, such that no two individuals have the same combination of identification code and password; (b) ensuring that identification code and password issuances are periodically checked, recalled, or revised; (c) following loss management procedures to electronically de-authorize lost, stolen, missing, or otherwise potentially compromised tokens, cards, and other devices; (d) using transaction safeguards to prevent unauthorized use of passwords and/or identification codes, and to detect and report in an immediate and urgent manner any attempts at their unauthorized use; and (e) testing devices, such as tokens or cards, that bear or generate identification code or password information to ensure that they function properly and have not been altered in an unauthorized manner.
+
+SECTION 11 COMPLIANCE IN CLINICAL TRIALS
+
+For clinical trial data, 21 CFR Part 11 compliance requires that all EDC systems, CTMS (clinical trial management systems), IRT (interactive response technology) systems, eCOA (electronic clinical outcome assessment) systems, and laboratory data systems that generate, modify, or maintain records required by FDA regulations comply with Part 11 controls. During FDA inspections, auditors routinely review audit trail completeness, access control implementation, validation documentation, and training records for clinical trial systems. Failures in 21 CFR Part 11 compliance can result in data integrity findings that jeopardize the acceptability of clinical trial data.
