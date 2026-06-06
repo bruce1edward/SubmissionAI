@@ -11,7 +11,7 @@ SubmissionAI is a multi-agent AI system that takes an eCTD-style package as inpu
 ```bash
 pip install -r requirements.txt
 export NEBIUS_API_KEY="your-nebius-api-key"
-streamlit run streamlit_ectd_demo.py
+streamlit run app.py
 ```
 
 The app runs immediately with no-prereq live RAG. Click **Run Generated Demo** on the Overview page to see the full flow without uploading a package.
@@ -63,7 +63,7 @@ Deterministic pre-flight checks run before any LLM call: SAP amendment timing vs
 ## Project structure
 
 ```
-streamlit_ectd_demo.py          — Streamlit UI (6 pages)
+app.py                          — Streamlit UI (6 pages)
 ectd_agent.py                   — Five LLM agents + fallback demo data
 regulatory_knowledge_base.py    — FDA Conformance Checker RAG
 sap_validator_knowledge_base.py — SAP Validator RAG

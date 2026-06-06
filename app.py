@@ -6,7 +6,7 @@ Install:
 
 Run:
     export NEBIUS_API_KEY="your-nebius-api-key"
-    streamlit run streamlit_ectd_demo.py
+    streamlit run app.py
 """
 
 from __future__ import annotations
@@ -177,17 +177,17 @@ st.markdown(
 MARKDOWN_DOCS = [
     {
         "title": "System Design",
-        "path": "eCTD Submission Assembler Agent - System Design & Implementation Guide.md",
+        "path": "docs/system_design_guide.md",
         "summary": "Multi-agent architecture, data flow, implementation plan, and demo execution guide.",
     },
     {
         "title": "FDA and EMA Evidence",
-        "path": "FDA & EMA Submission Statistics_ Supporting Data for Phase 2→3 IND Agent Hackathon.md",
+        "path": "docs/submission_statistics_reference.md",
         "summary": "Submission statistics, transition failure rates, ROI case, and regulatory landscape.",
     },
     {
         "title": "eCTD Package Structure",
-        "path": "eCTD Submission Package_ Complete Folder Structure Example.md",
+        "path": "docs/ectd_package_structure_example.md",
         "summary": "Folder hierarchy, naming rules, XML backbone examples, and IND completeness checklist.",
     },
 ]
@@ -1400,7 +1400,7 @@ def render_about() -> None:
     st.code(
         """pip install -r requirements.txt
 export NEBIUS_API_KEY="your-nebius-api-key"
-streamlit run streamlit_ectd_demo.py""",
+streamlit run app.py""",
         language="bash",
     )
     st.markdown("The app runs immediately with no-prereq live RAG guidance.")
