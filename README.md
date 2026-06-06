@@ -63,19 +63,57 @@ Deterministic pre-flight checks run before any LLM call: SAP amendment timing vs
 ## Project structure
 
 ```
-app.py                          — Streamlit UI (6 pages)
-ectd_agent.py                   — Five LLM agents + fallback demo data
-regulatory_knowledge_base.py    — FDA Conformance Checker RAG
-sap_validator_knowledge_base.py — SAP Validator RAG
+app.py                              — Streamlit UI (6 pages)
+requirements.txt                    — All dependencies
 
-rag_knowledge_base/             — FDA Conformance KB source documents
+# Core implementation
+ectd_agent.py                       — Agent logic, LLM calls, fallback data
+regulatory_knowledge_base.py        — FDA Conformance Checker RAG engine
+sap_validator_knowledge_base.py     — SAP Validator RAG engine
+
+# Python package (importable modules)
+src/
+  agents/
+    content_extractor.py            — Agent 1: extract Phase 2/3 trial facts
+    provenance_tracer.py            — Agent 2: map Phase 2 → Phase 3 provenance
+    sap_validator.py                — Agent 3: validate SAP (7 domains, preflight)
+    conformance_checker.py          — Agent 4: FDA/ICH/CFR conformance checks
+    report_generator.py             — Agent 5: executive compliance report
+  orchestration/
+    graph.py                        — Sequential agent graph + AgentGraph class
+  rag/
+    vector_store.py                 — Unified interface to both hybrid KBs
+
+# Knowledge base source documents
+rag_knowledge_base/                 — FDA Conformance KB (13 docs, 227 chunks)
   ich/    fda/    cfr/    ema/
 
-sap_knowledge_base/             — SAP Validator KB additional documents
+sap_knowledge_base/                 — SAP Validator KB (12 docs, 182 chunks)
   ich/    fda/    ema/
 
-requirements.txt                — All dependencies
-smoke_test.py                   — Quick validation script
+docs/                               — Technical blog articles (Markdown)
+smoke_test.py                       — Quick validation script
+```
+
+### Python API usage
+
+```python
+from src.orchestration.graph import run_pipeline, AgentGraph
+
+# One-shot analysis
+result = run_pipeline("path/to/ectd_package.zip", api_key="nbs-...")
+print(result["overall_score"])          # e.g. 0.87
+
+# Object-oriented, step-by-step access
+graph = AgentGraph(model="meta-llama/Llama-3.3-70B-Instruct", api_key="nbs-...")
+steps = graph.run_step_by_step("path/to/ectd_package.zip")
+print(steps["sap"]["findings"])         # SAP validation findings
+
+# Vector store directly
+from src.rag.vector_store import VectorStore
+vs = VectorStore()
+bundle = vs.retrieve_sap(sap_text="...", csr_text="...")
+print(bundle["retrieved_count"])
 ```
 
 ---
