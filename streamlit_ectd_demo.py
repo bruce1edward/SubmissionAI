@@ -912,7 +912,9 @@ def render_detailed_report() -> None:
 
         sap_col1, sap_col2, sap_col3, sap_col4 = st.columns(4)
         sap_col1.metric("Pre-Specification", sap.get("pre_specification", {}).get("status", "—"))
-        sap_col2.metric("Endpoint Alignment", format_score(sap.get("endpoint_alignment", {}).get("alignment_percentage")))
+        _raw_align = sap.get("endpoint_alignment", {}).get("alignment_percentage") or 0
+        _align_val = _raw_align / 100 if _raw_align > 1 else _raw_align
+        sap_col2.metric("Endpoint Alignment", format_score(_align_val))
         sap_col3.metric("Interim Analysis", sap.get("interim_analysis", {}).get("status", "—"))
         sap_col4.metric("SAP Score", format_score(sap.get("overall_score")))
 

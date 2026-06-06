@@ -950,7 +950,7 @@ Deterministic pre-flight findings (include these in your issues list):
 Return only valid JSON with this schema:
 {{
   "pre_specification": {{"status": "YES|NO|UNCLEAR", "lock_date": "YYYY-MM-DD", "comment": ""}},
-  "endpoint_alignment": {{"phase2_endpoints": [], "phase3_endpoints": [], "alignment_percentage": 0.0, "status": "PERFECT|GOOD|FAIR|POOR"}},
+  "endpoint_alignment": {{"phase2_endpoints": [], "phase3_endpoints": [], "alignment_percentage": 0.95, "status": "PERFECT|GOOD|FAIR|POOR"}},
   "subgroup_analyses": {{"pre_specified": [], "post_hoc": [], "status": "ALL_PRE_SPECIFIED|MIXED|ALL_POST_HOC"}},
   "statistical_methods": {{"primary_test": "", "secondary_tests": [], "multiplicity_adjustment": "", "status": "APPROPRIATE|QUESTIONABLE|INAPPROPRIATE"}},
   "sample_size": {{"n_phase3": 0, "power": 0.0, "alpha": 0.0, "justification": "", "status": "JUSTIFIED|UNDERPOWERED|OVERPOWERED"}},
@@ -958,6 +958,7 @@ Return only valid JSON with this schema:
   "issues": [{{"severity": "CRITICAL|MAJOR|MINOR", "issue": "", "recommendation": ""}}],
   "overall_score": 0.0
 }}
+All numeric scores (alignment_percentage, power, alpha, overall_score) must be decimals between 0.0 and 1.0, not percentages.
 """
     fallback = _fallback_sap()
     result = _with_parse_fallback(
