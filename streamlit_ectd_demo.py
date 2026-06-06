@@ -626,18 +626,21 @@ def render_overview(mode: str, model: str, api_key: str | None) -> None:
         with demo_col1:
             st.markdown(
                 """
-                Run the generated package to show the full flow without needing an API key,
-                or open the upload workflow to inspect and analyze your own ZIP package.
+                Run the generated XYZ-101 package through the full agent pipeline,
+                or open the upload workflow to analyze your own ZIP package.
+                **Requires a Nebius API key** — paste it in the sidebar first.
                 """
             )
             action_col1, action_col2 = st.columns([0.55, 0.45])
             with action_col1:
-                if st.button("Run Generated Demo", type="primary"):
+                if st.button("Run Generated Demo", type="primary", disabled=not bool(api_key)):
                     package_path = create_demo_package()
                     package_info = extract_package_info(package_path)
-                    run_analysis(package_path, package_info, "Demo Data", model, api_key)
+                    run_analysis(package_path, package_info, mode, model, api_key)
                     if st.session_state.analysis_complete:
                         st.rerun()
+                if not api_key:
+                    st.caption("⬅ Paste your Nebius key in the sidebar to enable.")
             with action_col2:
                 if st.button("Open Upload Workflow"):
                     st.session_state.next_page = "Upload & Analyze"
@@ -649,7 +652,7 @@ def render_overview(mode: str, model: str, api_key: str | None) -> None:
                 <div class="status-strip">
                 API key: <strong>{"loaded" if key_set else "not set"}</strong><br>
                 Model: <strong>{model}</strong><br>
-                {"Ready to run." if key_set else "Enter your Nebius key in Demo Setup first."}
+                {"Ready to run." if key_set else "Paste your Nebius key in the sidebar to run."}
                 </div>
                 """,
                 unsafe_allow_html=True,
