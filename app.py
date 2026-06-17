@@ -568,16 +568,27 @@ def run_analysis(package_path: str, package_info: dict[str, Any], mode: str, mod
     st.success("Analysis complete.")
 
 
+_LOGO_PATH = Path(__file__).parent / "logo.webp"
+
+
 def render_header() -> None:
-    st.markdown(
-        """
-        <div class="header-section">
-            <h1>SubmissionAI</h1>
-            <p>Regulatory provenance, SAP validation, and FDA conformance analysis for Phase 2 to 3 submissions.</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    if _LOGO_PATH.exists():
+        st.logo(str(_LOGO_PATH), size="large")
+
+    logo_col, text_col = st.columns([0.07, 0.93])
+    with logo_col:
+        if _LOGO_PATH.exists():
+            st.image(str(_LOGO_PATH), width=56)
+    with text_col:
+        st.markdown(
+            """
+            <div class="header-section">
+                <h1>SubmissionAI</h1>
+                <p>Regulatory provenance, SAP validation, and FDA conformance analysis for Phase 2 to 3 submissions.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
 
 def render_metric_row(results: dict[str, Any]) -> None:
@@ -674,19 +685,24 @@ def render_rag_trace(trace: dict[str, Any] | None) -> None:
 
 
 def render_overview(mode: str, model: str, api_key: str | None) -> None:
-    st.markdown(
-        """
-        <div class="demo-hero">
-            <div class="hero-kicker">Live regulatory AI demo</div>
-            <h2>SubmissionAI</h2>
-            <p>
-            One click, and the system reads 21 regulatory documents, runs five AI agents,
-            and tells you whether your Phase 3 IND is ready for FDA.
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    hero_logo_col, hero_text_col = st.columns([0.12, 0.88])
+    with hero_logo_col:
+        if _LOGO_PATH.exists():
+            st.image(str(_LOGO_PATH), width=100)
+    with hero_text_col:
+        st.markdown(
+            """
+            <div class="demo-hero">
+                <div class="hero-kicker">Live regulatory AI demo</div>
+                <h2>SubmissionAI</h2>
+                <p>
+                One click, and the system reads 21 regulatory documents, runs five AI agents,
+                and tells you whether your Phase 3 IND is ready for FDA.
+                </p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
     results = st.session_state.analysis_results
 
