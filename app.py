@@ -573,7 +573,7 @@ _LOGO_PATH = Path(__file__).parent / "logo.webp"
 
 def render_header() -> None:
     if _LOGO_PATH.exists():
-        st.logo(str(_LOGO_PATH), size="large")
+        st.logo(str(_LOGO_PATH))
 
     logo_col, text_col = st.columns([0.07, 0.93])
     with logo_col:
