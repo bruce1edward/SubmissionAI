@@ -18,4 +18,6 @@ If live services fail, display the explicit unresolved result; a labeled recordi
 
 ## Before recording
 
+Event eligibility is pending organizer clarification. Review the [evidence timeline and contribution boundary](EVENT_ELIGIBILITY.md), obtain the organizer's ruling, and adapt this script to the permitted scope. Do not describe the pre-start baseline as work built during the hacking window. This script is a functional demonstration, not evidence of eligibility.
+
 Verify the sandbox and model connections, vector index readiness, public repository, and one-minute video accessibility. Use review history to select the desired starting run. Existing history is intentionally preserved; use another study ID in imported JSON or a separate DATA_DIR for a clean local rehearsal.

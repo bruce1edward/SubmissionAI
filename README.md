@@ -16,6 +16,8 @@ A fresh document-review harness that remembers approved corrections, resumes fro
 
 This repository publishes the standalone Continuity review harness. It does not include or import the earlier SubmissionAI Streamlit implementation or its regulatory knowledge bases. See [development history](docs/DEVELOPMENT_HISTORY.md) for the implementation's provenance and the distinction between a new repository and the dates its code was developed.
 
+**Event eligibility: pending organizer clarification.** The [eligibility request and evidence timeline](docs/EVENT_ELIGIBILITY.md) identify the pre-start baseline and subsequent verification records. The request is prepared but has not been sent; no organizer ruling has been received.
+
 ## Run locally
 
 Requires Python 3.12+. No Node build or Streamlit dependency.
