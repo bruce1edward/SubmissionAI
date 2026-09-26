@@ -1,0 +1,109 @@
+{
+  "measured_at": "2026-09-26T12:23:27.445132+00:00",
+  "mode": "deterministic",
+  "storage": "sqlite",
+  "retrieval": "lexical_local",
+  "note": "Synthetic local harness benchmark. No LLM calls or Atlas measurements. Wall times include local checkpoint I/O and are not production performance claims.",
+  "runs": [
+    {
+      "scenario": "initial",
+      "version": "v1",
+      "wall_ms": 6.58,
+      "metrics": {
+        "model_calls": 0,
+        "retrieval_calls": 2,
+        "tokens": 0,
+        "checks_executed": 2,
+        "checks_reused": 0,
+        "active_ms": 0.4
+      },
+      "findings": {
+        "endpoint_alignment": {
+          "status": "open",
+          "transition": "new",
+          "reused": false
+        },
+        "referenced_documents": {
+          "status": "open",
+          "transition": "new",
+          "reused": false
+        }
+      }
+    },
+    {
+      "scenario": "incremental",
+      "version": "v2",
+      "wall_ms": 4.58,
+      "metrics": {
+        "model_calls": 0,
+        "retrieval_calls": 1,
+        "tokens": 0,
+        "checks_executed": 1,
+        "checks_reused": 1,
+        "active_ms": 0.18
+      },
+      "findings": {
+        "endpoint_alignment": {
+          "status": "clear",
+          "transition": "resolved",
+          "reused": false
+        },
+        "referenced_documents": {
+          "status": "open",
+          "transition": "unchanged",
+          "reused": true
+        }
+      }
+    },
+    {
+      "scenario": "full_comparison",
+      "version": "v2",
+      "wall_ms": 3.99,
+      "metrics": {
+        "model_calls": 0,
+        "retrieval_calls": 2,
+        "tokens": 0,
+        "checks_executed": 2,
+        "checks_reused": 0,
+        "active_ms": 0.30000000000000004
+      },
+      "findings": {
+        "endpoint_alignment": {
+          "status": "clear",
+          "transition": "unchanged",
+          "reused": false
+        },
+        "referenced_documents": {
+          "status": "open",
+          "transition": "unchanged",
+          "reused": false
+        }
+      }
+    },
+    {
+      "scenario": "reversion",
+      "version": "v3",
+      "wall_ms": 4.52,
+      "metrics": {
+        "model_calls": 0,
+        "retrieval_calls": 1,
+        "tokens": 0,
+        "checks_executed": 1,
+        "checks_reused": 1,
+        "active_ms": 0.19
+      },
+      "findings": {
+        "endpoint_alignment": {
+          "status": "open",
+          "transition": "reopened",
+          "reused": false
+        },
+        "referenced_documents": {
+          "status": "open",
+          "transition": "unchanged",
+          "reused": true
+        }
+      }
+    }
+  ]
+}
