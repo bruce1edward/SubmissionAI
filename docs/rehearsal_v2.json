@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-26T18:14:56.794728+00:00",
+  "stage": "v2 correction and incremental reuse",
+  "study_id": "REHEARSAL-210a3222",
+  "configuration": {
+    "storage": "mongodb",
+    "review_mode": "llm",
+    "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "retrieval": "atlas_vector",
+    "embedding_model": "Qwen/Qwen3-Embedding-8B"
+  },
+  "changed_documents": [
+    "sap.txt"
+  ],
+  "notes_recalled": 1,
+  "metrics": {
+    "model_calls": 1,
+    "retrieval_calls": 1,
+    "tokens": 1901,
+    "checks_executed": 1,
+    "checks_reused": 1,
+    "active_ms": 9774.78
+  },
+  "request_wall_seconds": 11.99,
+  "citations_verified_against_current_sources": true,
+  "checkpoint_read_back": true,
+  "findings": {
+    "endpoint_alignment": {
+      "status": "clear",
+      "transition": "resolved",
+      "reused": false,
+      "explanation": "Both documents schedule the primary endpoint assessment at Week 8.",
+      "citations": [
+        {
+          "document_id": "protocol.txt",
+          "quote": "Primary endpoint assessment: Week 8."
+        },
+        {
+          "document_id": "sap.txt",
+          "quote": "Primary endpoint assessment: Week 8."
+        }
+      ],
+      "missing_documents": []
+    },
+    "referenced_documents": {
+      "status": "open",
+      "transition": "unchanged",
+      "reused": true,
+      "explanation": "The package is missing referenced document(s): safety_appendix.txt.",
+      "citations": [
+        {
+          "document_id": "checklist.txt",
+          "quote": "Required document: protocol.txt"
+        },
+        {
+          "document_id": "checklist.txt",
+          "quote": "Required document: sap.txt"
+        },
+        {
+          "document_id": "checklist.txt",
+          "quote": "Required document: safety_appendix.txt"
+        }
+      ],
+      "missing_documents": [
+        "safety_appendix.txt"
+      ]
+    }
+  },
+  "note": "Synthetic live revision rehearsal. Chat token counts exclude embedding calls. Only SAP timing was corrected; the safety appendix remains absent."
+}

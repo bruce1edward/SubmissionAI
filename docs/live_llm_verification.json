@@ -1,0 +1,71 @@
+{
+  "verified_at": "2026-09-26T16:31:49.908702+00:00",
+  "data": "synthetic demo documents only",
+  "storage": "MongoDB Atlas hackathon sandbox",
+  "model": "gpt-6-luna",
+  "api_style": "responses",
+  "retrieval": "lexical retrieval from Atlas records; vector search disabled",
+  "paused_live_check_survived_app_restart": true,
+  "completed_check_not_repeated_after_restart": true,
+  "source_bound_memory_recalled": true,
+  "completed_review_replay_made_no_new_model_calls": true,
+  "total_model_calls": 4,
+  "total_reported_tokens": 5850,
+  "scenarios": {
+    "v1": {
+      "model_calls": 2,
+      "tokens": 2887,
+      "checks_executed": 2,
+      "checks_reused": 0,
+      "findings": {
+        "endpoint_alignment": {
+          "status": "open",
+          "transition": "new",
+          "reused": false
+        },
+        "referenced_documents": {
+          "status": "open",
+          "transition": "new",
+          "reused": false
+        }
+      }
+    },
+    "v2": {
+      "model_calls": 1,
+      "tokens": 1474,
+      "checks_executed": 1,
+      "checks_reused": 1,
+      "findings": {
+        "endpoint_alignment": {
+          "status": "clear",
+          "transition": "resolved",
+          "reused": false
+        },
+        "referenced_documents": {
+          "status": "open",
+          "transition": "unchanged",
+          "reused": true
+        }
+      }
+    },
+    "v3": {
+      "model_calls": 1,
+      "tokens": 1489,
+      "checks_executed": 1,
+      "checks_reused": 1,
+      "findings": {
+        "endpoint_alignment": {
+          "status": "open",
+          "transition": "reopened",
+          "reused": false
+        },
+        "referenced_documents": {
+          "status": "open",
+          "transition": "unchanged",
+          "reused": true
+        }
+      }
+    }
+  },
+  "limitations": "One synthetic end-to-end integration run; not a general accuracy, latency, or regulatory evaluation. Additional provider smoke tests are excluded from these totals."
+}

@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-26T17:10:48.695703+00:00",
+  "retrieval": "atlas_vector",
+  "embedding_model": "Qwen/Qwen3-Embedding-8B",
+  "review_model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "atlas_checkpoint_read_back": true,
+  "metrics": {
+    "model_calls": 3,
+    "retrieval_calls": 3,
+    "tokens": 5214,
+    "checks_executed": 2,
+    "checks_reused": 0,
+    "active_ms": 21320.85
+  },
+  "findings": {
+    "endpoint_alignment": {
+      "status": "open",
+      "verified_citations": 2
+    },
+    "referenced_documents": {
+      "status": "open",
+      "verified_citations": 3
+    }
+  },
+  "retrieval_trace": [
+    {
+      "tool": "retrieve_evidence",
+      "detail": "Retrieved 3 passages via atlas_vector.",
+      "query": "Primary endpoint assessment timing Week protocol statistical analysis plan"
+    },
+    {
+      "tool": "retrieve_evidence",
+      "detail": "Retrieved 3 passages via atlas_vector.",
+      "query": "Required document package checklist referenced appendix"
+    },
+    {
+      "tool": "retrieve_evidence",
+      "detail": "Agent requested one additional retrieval.",
+      "query": "checklist.txt"
+    }
+  ],
+  "limitations": "One live synthetic review. Similarity scores are not confidence estimates."
+}

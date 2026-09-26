@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-26T17:04:49.934584+00:00",
+  "storage": "mongodb",
+  "retrieval": "atlas_vector",
+  "index": {
+    "name": "evidence_qwen3_4096",
+    "status": "READY",
+    "queryable": true,
+    "created": false
+  },
+  "embedding_provider": "nebius",
+  "embedding_model": "Qwen/Qwen3-Embedding-8B",
+  "dimensions": 4096,
+  "query": "When is the main outcome measured?",
+  "results": [
+    {
+      "version": "1.0",
+      "other_study": false,
+      "scoped": true,
+      "source_offsets_verified": true,
+      "relevant_top_result": true,
+      "hits": [
+        {
+          "document_id": "protocol.txt",
+          "score": 0.7805142402648926
+        },
+        {
+          "document_id": "sap.txt",
+          "score": 0.7613734006881714
+        }
+      ]
+    },
+    {
+      "version": "2.0",
+      "other_study": false,
+      "scoped": true,
+      "source_offsets_verified": true,
+      "relevant_top_result": true,
+      "hits": [
+        {
+          "document_id": "protocol.txt",
+          "score": 0.7806611657142639
+        },
+        {
+          "document_id": "sap.txt",
+          "score": 0.7710932493209839
+        }
+      ]
+    },
+    {
+      "version": "1.0",
+      "other_study": true,
+      "scoped": true,
+      "source_offsets_verified": true,
+      "relevant_top_result": true,
+      "hits": [
+        {
+          "document_id": "protocol.txt",
+          "score": 0.7808156609535217
+        },
+        {
+          "document_id": "sap.txt",
+          "score": 0.7616064548492432
+        }
+      ]
+    }
+  ],
+  "note": "Live synthetic check of semantic ranking, source integrity, and study/version isolation; not a general retrieval benchmark. Creates three synthetic packages and makes embedding calls."
+}

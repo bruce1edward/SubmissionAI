@@ -1,0 +1,24 @@
+{
+  "verified_at": "2026-09-26T18:09:33.504057+00:00",
+  "study_id": "REHEARSAL-210a3222",
+  "checkpoint_restored_after_server_restart": true,
+  "state_unchanged": true,
+  "notes_recalled": 1,
+  "completed_nodes": [
+    "prepare"
+  ],
+  "next_nodes": [
+    "endpoint_alignment"
+  ],
+  "status": "completed",
+  "note": "Saved checkpoint survived a server restart; the user then resumed the same review to completion, retaining the reviewer note.",
+  "resumed_to_completion": true,
+  "metrics": {
+    "model_calls": 1,
+    "retrieval_calls": 1,
+    "tokens": 1917,
+    "checks_executed": 1,
+    "checks_reused": 1,
+    "active_ms": 7031.719999999999
+  }
+}

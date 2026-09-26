@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <title>SubmissionAI — Automate the last mile of drug development</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a href="/" class="brand"><span class="brand-symbol">↗</span><span>Submission<span class="brand-light">AI</span><small>Automate the last mile<br>of drug development</small></span></a>
+    <div class="workspace-label">YOUR WORKSPACE</div>
+    <nav aria-label="Main navigation">
+      <button class="nav-item active" data-tab="review"><span>◫</span> Review workspace</button>
+      <button class="nav-item" data-tab="evidence"><span>▤</span> Evidence library <b id="document-count">0</b></button>
+      <button class="nav-item" data-tab="history"><span>↺</span> Review history <b id="history-count">0</b></button>
+    </nav>
+    <div class="sidebar-divider"></div>
+    <div class="workspace-label">STUDY PACKAGES</div>
+    <div id="package-list" class="package-list"><p class="sidebar-empty">Your first study starts here.</p></div>
+    <button class="sidebar-import" id="import-sidebar">＋ Import a package</button>
+    <div class="sidebar-bottom"><div class="avatar">B</div><div>Personal workspace<small>Hackathon edition</small></div><button id="settings-button" aria-label="Connection details">⚙</button></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><div><span class="muted">Workspace</span><span class="slash">/</span><span id="breadcrumb">Review workspace</span></div><button class="environment" id="environment"><i></i> Connecting…</button></header>
+    <main>
+      <section class="page-heading"><div><div class="eyebrow"><span class="mini-square"></span> PERSISTENT DOCUMENT REVIEW</div><h1>A review that remembers.</h1><p>Carry the evidence forward. Pick up exactly where you left off.</p></div><button class="button secondary" id="import-button"><span>↥</span> Import package</button></section>
+      <div id="mode-notice" class="mode-notice" role="status"></div>
+      <div id="message" class="message hidden" role="alert"></div>
+      <div class="tabs" role="tablist" aria-label="Workspace views"><button class="tab active" data-tab="review" role="tab" aria-selected="true">Review workspace</button><button class="tab" data-tab="evidence" role="tab" aria-selected="false">Evidence library</button><button class="tab" data-tab="history" role="tab" aria-selected="false">Review history</button></div>
+      <section id="review-view" class="view">
+        <div class="review-grid">
+          <div class="review-main">
+            <section class="package-card card"><div class="card-label">CURRENT PACKAGE<span id="package-version" class="subtle-tag">NO PACKAGE</span></div><div id="package-heading" class="package-heading"><span class="folder-icon">▱</span><div><h2>Give your review a starting point</h2><p>Import a JSON package or explore the synthetic study.</p></div></div><div class="package-actions"><div class="sample-controls"><label for="sample-version">Sample</label><select id="sample-version" aria-label="Synthetic package version"><option value="v1">v1 · Initial package</option><option value="v2">v2 · Timing corrected</option><option value="v3">v3 · Timing reverted</option></select></div><button id="load-demo" class="button secondary small">Load sample <span>↗</span></button></div></section>
+            <section class="workflow-card card"><div class="section-title"><div><span class="card-label">REVIEW WORKFLOW</span><h2>Every step, accounted for.</h2></div><span id="run-status" class="status neutral">Ready to start</span></div><div id="workflow" class="workflow"></div><div class="workflow-actions"><div id="checkpoint-summary" class="checkpoint-summary"><span>◇</span> Progress is saved after every step.</div><div><button id="step-button" class="button secondary small" disabled>Run one step</button><button id="run-button" class="button primary small" disabled>Start review <span>→</span></button></div></div></section>
+            <section class="findings-section"><div class="section-title"><div><span class="card-label">EVIDENCE-BACKED RESULTS</span><h2>What needs your attention</h2></div><span id="findings-count" class="count-label">0 checks completed</span></div><div id="findings"><div class="empty-state"><div class="empty-symbol">⌕</div><h3>Your findings will appear here.</h3><p>Each conclusion is checked against the current source.<br>Missing evidence stays an open question.</p></div></div></section>
+            <section class="trace-card card"><button id="trace-toggle" class="trace-toggle" aria-expanded="false"><span><span class="trace-dot"></span> Execution journal</span><span id="event-count">0 events</span><span>⌄</span></button><div id="trace" class="trace hidden"></div></section>
+          </div>
+          <aside class="inspector">
+            <section class="card inspector-card"><div class="inspector-top"><span class="card-label">SOURCE INSPECTOR</span><span class="inspector-icon">⌕</span></div><div id="source-content" class="source-content"><div class="source-empty"><span>▤</span><h3>See the source, not just the answer.</h3><p>Select a citation to inspect its exact passage in the current document.</p></div></div></section>
+            <section class="card memory-card"><div class="section-title"><span class="card-label">REVIEW MEMORY</span><span id="memory-count" class="subtle-tag">0 NOTES</span></div><p class="memory-intro">Source-backed corrections that stay with this study.</p><div id="memories"></div><button id="add-memory" class="button secondary full small" disabled>＋ Add reviewer note</button></section>
+            <section class="run-details"><div class="card-label">THIS REVIEW</div><div id="metrics"><span>Completed steps</span><b>0 / 4</b><span>Reused checks</span><b>0</b><span>Model calls</span><b>0</b><span>Active check time</span><b>—</b></div><div class="record-actions"><button id="export-button" class="text-button" disabled>Export review record ↗</button><button id="full-review-button" class="text-button" disabled>Run all checks again ↺</button></div></section>
+          </aside>
+        </div>
+      </section>
+      <section id="evidence-view" class="view hidden"><div class="section-title"><div><span class="card-label">SOURCE DOCUMENTS</span><h2>The evidence behind the review</h2></div><button id="download-sample" class="button secondary small">Download sample JSON ↧</button></div><section class="card evidence-search"><form id="evidence-search-form"><label for="evidence-query">Search this package</label><p id="search-mode" class="muted">Find relevant source passages in the selected version.</p><div class="search-controls"><input id="evidence-query" required maxlength="1200" placeholder="When is the primary endpoint assessed?"><button id="search-button" class="button primary small" type="submit" disabled>Search evidence</button></div></form><div id="search-results" aria-live="polite"></div></section><div id="evidence-list" class="evidence-list"></div></section>
+      <section id="history-view" class="view hidden"><div class="section-title"><div><span class="card-label">PERSISTENT HISTORY</span><h2>Every review has a record.</h2></div><button id="refresh-history" class="button secondary small">Refresh ↻</button></div><div id="history-list"></div></section>
+      <footer><span><i></i> Built for continuity. Grounded in evidence.</span><span>Synthetic document review · No clinical or approval advice</span></footer>
+    </main>
+  </div>
+  <input type="file" id="file-input" accept="application/json,.json" hidden>
+  <dialog id="memory-dialog"><form id="memory-form"><div class="dialog-heading"><div class="eyebrow">HUMAN REVIEW</div><h2>A correction worth remembering.</h2><p>Pin a note to an exact passage. It will be recalled only while its source is unchanged.</p></div><label>Source document<select name="document_id" id="memory-document" required></select></label><label>Exact source quote<textarea name="quote" id="memory-quote" rows="3" required minlength="4" maxlength="1000"></textarea></label><label>Your reviewer note<textarea name="summary" rows="3" required minlength="5" maxlength="800" placeholder="What should the next review remember?"></textarea></label><label>Applies to<select name="check_id"><option value="endpoint_alignment">Endpoint timing alignment</option><option value="referenced_documents">Referenced document coverage</option></select></label><details class="alias-details"><summary>Map a referenced filename to this source</summary><p>Use only for a supporting document whose identity you have verified.</p><label>Alias filename<input name="alias" maxlength="80" placeholder="safety_appendix.txt"></label></details><p class="form-error" id="memory-error" role="alert"></p><div class="dialog-actions"><button type="button" class="button secondary" data-close="memory-dialog">Cancel</button><button class="button primary" type="submit">Approve & save note</button></div></form></dialog>
+  <dialog id="connection-dialog"><div class="dialog-heading"><div class="eyebrow">ENVIRONMENT</div><h2>Your review engine.</h2><div id="connection-content"></div></div><form id="token-form"><label>App access token <span class="muted">(if configured)</span><input id="access-token" type="password" autocomplete="off" placeholder="Enter shared app token"></label><div class="dialog-actions"><button type="button" class="button secondary" data-close="connection-dialog">Close</button><button type="submit" class="button primary">Connect</button></div></form></dialog>
+</body>
+</html>

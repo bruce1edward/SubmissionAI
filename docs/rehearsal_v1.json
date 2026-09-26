@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-26T17:49:23.866051+00:00",
+  "stage": "v1 findings",
+  "study_id": "REHEARSAL-210a3222",
+  "configuration": {
+    "storage": "mongodb",
+    "review_mode": "llm",
+    "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "retrieval": "atlas_vector",
+    "embedding_model": "Qwen/Qwen3-Embedding-8B",
+    "vector_index": "evidence_qwen3_4096"
+  },
+  "metrics": {
+    "model_calls": 3,
+    "retrieval_calls": 3,
+    "tokens": 5084,
+    "checks_executed": 2,
+    "checks_reused": 0,
+    "active_ms": 18316.899999999998
+  },
+  "request_wall_seconds": 20.97,
+  "checkpoint_read_back": true,
+  "citations_verified_against_current_sources": true,
+  "findings": {
+    "endpoint_alignment": {
+      "status": "open",
+      "transition": "new",
+      "reused": false,
+      "explanation": "The protocol specifies Week 8, while the SAP specifies Week 12. The primary assessment timing is inconsistent.",
+      "citations": [
+        {
+          "document_id": "protocol.txt",
+          "quote": "Primary endpoint assessment: Week 8."
+        },
+        {
+          "document_id": "sap.txt",
+          "quote": "Primary endpoint assessment: Week 12."
+        }
+      ],
+      "missing_documents": []
+    },
+    "referenced_documents": {
+      "status": "open",
+      "transition": "new",
+      "reused": false,
+      "explanation": "The package is missing referenced document(s): safety_appendix.txt.",
+      "citations": [
+        {
+          "document_id": "checklist.txt",
+          "quote": "Required document: protocol.txt"
+        },
+        {
+          "document_id": "checklist.txt",
+          "quote": "Required document: sap.txt"
+        },
+        {
+          "document_id": "checklist.txt",
+          "quote": "Required document: safety_appendix.txt"
+        }
+      ],
+      "missing_documents": [
+        "safety_appendix.txt"
+      ]
+    }
+  },
+  "note": "Synthetic v1 rehearsal on the final configuration. Chat token counts exclude embedding requests."
+}

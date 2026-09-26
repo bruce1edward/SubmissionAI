@@ -1,0 +1,28 @@
+{
+  "verified_at": "2026-09-26T16:49:56.051634+00:00",
+  "provider": "Nebius Token Factory",
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "api_style": "chat_completions",
+  "storage": "mongodb",
+  "synthetic_data_only": true,
+  "atlas_checkpoint_read_back": true,
+  "metrics": {
+    "model_calls": 3,
+    "retrieval_calls": 3,
+    "tokens": 4179,
+    "checks_executed": 2,
+    "checks_reused": 0,
+    "active_ms": 8753.67
+  },
+  "findings": {
+    "endpoint_alignment": {
+      "status": "open",
+      "verified_citations": 2
+    },
+    "referenced_documents": {
+      "status": "open",
+      "verified_citations": 3
+    }
+  },
+  "limitations": "One synthetic live app review. Vector search disabled. Not a general accuracy evaluation."
+}
