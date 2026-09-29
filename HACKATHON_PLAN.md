@@ -80,7 +80,7 @@ A short demo can simulate a sequence of work over time. It does not establish we
 
 ## 4. What your current project teaches us
 
-The public repository provides useful context: five agent roles, Streamlit, regulatory retrieval, and a fixed sequential pipeline. It is not an eligible ready-made entry under the supplied rules. Sources: [repository](https://github.com/bruce1edward/SubmissionAI), [orchestration](https://github.com/bruce1edward/SubmissionAI/blob/main/src/orchestration/graph.py), [core implementation](https://github.com/bruce1edward/SubmissionAI/blob/main/ectd_agent.py).
+The earlier repository snapshot provides useful context: five agent roles, Streamlit, regulatory retrieval, and a fixed sequential pipeline. It is not an eligible ready-made entry under the supplied rules. These links target the preserved historical commit: [repository snapshot](https://github.com/bruce1edward/SubmissionAI/tree/335c7d0d52cba2d8178b3f2bc447d6fb9ebbe200), [orchestration](https://github.com/bruce1edward/SubmissionAI/blob/335c7d0d52cba2d8178b3f2bc447d6fb9ebbe200/src/orchestration/graph.py), [core implementation](https://github.com/bruce1edward/SubmissionAI/blob/335c7d0d52cba2d8178b3f2bc447d6fb9ebbe200/ectd_agent.py).
 
 Code inspection also identified design issues to avoid in the new build:
 
