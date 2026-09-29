@@ -1,0 +1,9 @@
+{
+  "study_id": "SYN-014",
+  "version": "1.0",
+  "documents": [
+    {"id": "protocol.txt", "title": "Study protocol", "kind": "protocol", "text": "SYN-014 · Synthetic protocol\n\nThis fictional study package is for software demonstrations only.\n\nPrimary endpoint assessment: Week 8.\nFollow-up visit: Week 12.\n\nThe primary assessment schedule is defined in the protocol. The SAP must use the same scheduled primary endpoint assessment. This is a synthetic consistency rule, not regulatory guidance."},
+    {"id": "sap.txt", "title": "Statistical analysis plan", "kind": "sap", "text": "SYN-014 · Synthetic statistical analysis plan\n\nPrimary endpoint assessment: Week 12.\n\nAnalysis populations and methods are intentionally omitted from this software fixture. No clinical advice is implied."},
+    {"id": "checklist.txt", "title": "Package checklist", "kind": "checklist", "text": "SYN-014 · Synthetic document checklist\n\nRequired document: protocol.txt\nRequired document: sap.txt\nRequired document: safety_appendix.txt\n\nThese are explicit requirements for this fictional package, not FDA requirements."}
+  ]
+}

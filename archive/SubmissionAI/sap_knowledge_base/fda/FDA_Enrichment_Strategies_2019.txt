@@ -1,0 +1,56 @@
+FDA GUIDANCE: ENRICHMENT STRATEGIES FOR CLINICAL TRIALS TO SUPPORT APPROVAL OF HUMAN DRUGS AND BIOLOGICAL PRODUCTS
+Document Code: FDA-ENRICH
+Effective Date: March 2019
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 1: INTRODUCTION
+
+Enrichment strategies select subjects for clinical trials based on pre-specified characteristics to increase the likelihood of demonstrating a treatment effect. Enrichment can increase trial efficiency, but it must be pre-specified in the protocol and SAP. Post-hoc analysis of enriched subgroups — identifying the "right" patient subgroup after seeing the data — is not an acceptable basis for regulatory approval.
+
+This guidance describes three types of enrichment strategies: prognostic enrichment (selecting subjects more likely to have the event or endpoint of interest), predictive enrichment (selecting subjects more likely to respond to the treatment), and practical enrichment (selecting subjects for operational reasons). Each has different implications for the SAP and for the interpretation of results.
+
+SECTION 2: PROGNOSTIC ENRICHMENT
+
+Prognostic enrichment selects subjects who are more likely to experience the event or outcome being measured, regardless of treatment. This increases statistical power by increasing the event rate. Examples include: selecting subjects with a minimum disease severity score, selecting subjects with a minimum baseline biomarker level that predicts disease progression, and selecting subjects with prior treatment failure.
+
+Prognostic enrichment criteria must be pre-specified in the inclusion/exclusion criteria of the protocol. The SAP must document the enrichment criterion and describe how it was validated (e.g., from historical data demonstrating the criterion's prognostic value in this population). Post-hoc tightening of the enrichment criterion — for example, post-hoc exclusion of subjects with baseline values below a threshold that was not in the protocol — is not acceptable.
+
+SECTION 3: PREDICTIVE ENRICHMENT
+
+Predictive enrichment selects subjects who are more likely to respond to the treatment being investigated. This is the foundation of precision medicine and biomarker-driven trial design. Examples include: selecting HER2-positive subjects for a HER2-targeted therapy, selecting subjects with a specific mutation for a targeted small molecule, and selecting subjects with high expression of a receptor targeted by a biologic.
+
+Predictive enrichment raises additional SAP requirements:
+
+3.1 Biomarker Definition and Cutoff
+The biomarker used for enrichment must be precisely defined in the protocol and SAP: the specific assay, the cutoff value (for continuous biomarkers), the laboratory performing the assay, and the validation status of the assay. If a companion diagnostic device is used for patient selection, its performance characteristics must be described.
+
+3.2 Consistency Between Selection Criterion and Analysis Population
+The analysis population for the primary endpoint must be consistent with the enrichment selection criterion. If subjects are enrolled based on a biomarker threshold of >50% expression, the primary ITT population must include only subjects meeting this criterion. An analysis that enrolls based on one criterion but analyzes a different population is a compliance finding.
+
+3.3 Subgroup Analysis of Non-Enriched Subjects
+If the trial enrolls both enriched and non-enriched subjects (e.g., an all-comers design with a pre-specified subgroup analysis of the biomarker-positive subset), the SAP must pre-specify the subgroup analysis and the statistical approach for the subgroup. Using a treatment-by-biomarker interaction test is appropriate, but the direction and interpretation of the interaction must be pre-specified.
+
+SECTION 4: PRE-SPECIFICATION OF SUBGROUP ANALYSES
+
+4.1 Pre-Specified Subgroup Analyses
+Subgroup analyses intended to support labelling claims must be pre-specified in the SAP before unblinding. A pre-specified subgroup analysis must define: the subgroup (variable, cutoff, direction), the statistical method (e.g., forest plot, interaction test), and the interpretation framework (whether the subgroup result alone or in combination with the overall result supports the claim).
+
+4.2 Post-Hoc Subgroup Analyses
+Post-hoc subgroup analyses — analyses of subgroups that were not pre-specified in the SAP, or analyses that use a cutoff that was chosen after seeing the data — are exploratory and cannot support labelling claims. The CSR must clearly label all post-hoc subgroup analyses as exploratory. Presenting post-hoc subgroup results without this label creates a misleading impression of confirmatory evidence and is a compliance finding.
+
+4.3 The "P-hacking" Problem
+Exploration of many subgroups without pre-specification creates a high risk of false-positive subgroup effects. FDA reviewers are aware that in a trial with 10 subgroup analyses, one is expected to be "statistically significant" by chance alone at alpha = 0.05, even in the absence of any true treatment effect modification. Pre-specification is the only methodologically defensible protection against this type of spurious subgroup finding.
+
+SECTION 5: ADAPTIVE ENRICHMENT DESIGNS
+
+Some trials use adaptive enrichment designs that prospectively plan to modify the enrolled population based on interim analysis results. For example, a trial might begin enrolling all subjects and plan an interim analysis that may restrict subsequent enrollment to a biomarker-positive subgroup if the treatment effect appears substantially larger in that subgroup.
+
+Adaptive enrichment designs require: a pre-specified enrichment decision rule (e.g., "enrollment will be restricted to biomarker-positive subjects if the interim conditional power for biomarker-negative subjects falls below 0.20"), a statistical analysis plan that controls the Type I error rate across the enrichment decision and the final analysis, and FDA pre-submission concurrence on the design before trial initiation.
+
+The SAP for an adaptive enrichment design must pre-specify: the interim analysis timing, the enrichment decision rule in full detail, the sample size for each possible enrichment outcome, and the statistical method for the final analysis (which must account for the adaptive decision). Simulation studies demonstrating Type I error control are required.
+
+SECTION 6: BIOMARKER-DEFINED SUBGROUPS AND STRATIFICATION
+
+When the trial uses a biomarker for predictive enrichment and the biomarker is measured on a continuous scale, the SAP must pre-specify how the continuous biomarker will be used: as a binary enrichment criterion, as a continuous covariate in the analysis model, or as the basis for a pre-specified subgroup analysis at multiple cutoffs with multiplicity control. Using different cutoffs in the CSR than those pre-specified in the SAP is a compliance finding.
+
+If the biomarker is used as a stratification factor in the randomisation, it must also be used as a covariate in the primary analysis model, consistent with the FDA guidance on covariate adjustment. Failure to include a randomisation stratification factor in the primary analysis model when a biomarker was used as a stratification factor is a compliance finding that FDA statistical reviewers specifically look for.

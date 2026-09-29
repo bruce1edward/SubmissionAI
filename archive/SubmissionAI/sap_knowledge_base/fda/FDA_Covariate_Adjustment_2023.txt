@@ -1,0 +1,53 @@
+FDA GUIDANCE: ADJUSTING FOR COVARIATES IN RANDOMIZED CLINICAL TRIALS FOR DRUGS AND BIOLOGICAL PRODUCTS
+Document Code: FDA-COVARIATE
+Effective Date: May 2023
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 1: INTRODUCTION
+
+This guidance provides FDA's recommendations on covariate adjustment in randomized clinical trials. Covariate-adjusted analyses can improve precision and power compared to unadjusted analyses when the covariates are prognostically important. FDA encourages the use of covariate adjustment as the primary analysis method for confirmatory trials when appropriate. However, the adjustment model must be pre-specified in the protocol and SAP before data unblinding, and the covariates included in the model must be justified.
+
+SECTION II: GENERAL PRINCIPLES
+
+A. Pre-Specification Requirement
+The covariate adjustment model must be fully pre-specified in the Statistical Analysis Plan before any unblinded outcome data are reviewed. Pre-specification includes: the specific covariates to be included in the model, the functional form of each covariate (continuous, categorical, transformed), any interaction terms, the statistical method (e.g., ANCOVA, logistic regression, MMRM, ANCOVA-style estimator for binary outcomes), and the estimand to which the adjustment applies.
+
+Changes to the covariate adjustment model after unblinding are considered a source of bias and must be clearly documented with justification. Such changes will be scrutinized by FDA statistical reviewers.
+
+B. Consistency Between Randomisation Stratification and Analysis
+Stratification factors used in the randomisation procedure must be included as covariates in the primary analysis model. Failure to adjust for randomisation stratification factors in the analysis can result in loss of statistical power and may introduce bias. This is a common finding in FDA statistical reviews.
+
+Specifically: if a randomisation scheme stratifies subjects by ECOG performance status (0 vs 1) and prior lines of therapy (1 vs 2+), then the primary analysis model must include both ECOG and prior lines of therapy as covariates or strata. Including additional covariates beyond the stratification factors is acceptable but must be pre-specified.
+
+C. Baseline Covariates Only
+Covariate adjustment for causal inference purposes should use only baseline covariates — variables measured before randomisation and before treatment initiation. Post-baseline covariates are not appropriate for inclusion in a causal estimand model because they may be on the causal pathway between treatment and outcome or may be differentially affected by treatment.
+
+SECTION III: SPECIFIC METHODOLOGY RECOMMENDATIONS
+
+A. Pre-Specification of the Primary Analysis Model
+The primary covariate-adjusted analysis model must be defined completely in the SAP. For a continuous primary endpoint, the SAP must specify: the dependent variable (including any transformation), the treatment indicator, all baseline covariates with their coding, whether the model is fixed-effects or includes random effects (MMRM), and the estimand type (marginal vs. conditional). For a binary primary endpoint, the SAP must specify whether a logistic regression, a standardised (marginal) estimator, or a Cochran-Mantel-Haenszel (CMH) test adjusted for strata will be used.
+
+FDA recommends the standardisation approach (also called ANCOVA-style estimator or marginal g-computation) for binary and time-to-event endpoints when the target estimand is a marginal treatment effect in the entire randomised population. This is preferred over conditional estimates from logistic regression, which estimate the treatment effect for a given covariate pattern, not for the population as a whole.
+
+B. Acceptable Covariate Adjustment Methods by Endpoint Type
+
+For continuous endpoints: ANCOVA (analysis of covariance) with baseline value as a covariate is the standard approach. Mixed Model for Repeated Measures (MMRM) is appropriate for longitudinal endpoints with multiple post-baseline timepoints. MMRM handles missing data under MAR assumptions without explicit imputation.
+
+For binary endpoints: The Cochran-Mantel-Haenszel (CMH) test stratified by randomisation stratification factors is appropriate for stratified randomisation. Standardised logistic regression (g-computation) is appropriate for marginal risk differences. Unstandardised (conditional) logistic regression is acceptable but the estimand is conditional on covariates.
+
+For time-to-event endpoints: Stratified Cox proportional hazards model, with randomisation strata as stratification factors and additional prognostic covariates as regression covariates. The proportional hazards assumption must be tested and violations reported.
+
+C. Robustness and Sensitivity
+The pre-specified primary analysis model should be robust to minor model misspecification. FDA recommends pre-specifying at least one sensitivity analysis for the covariate adjustment method — for example, using a different adjustment model (e.g., unadjusted analysis or a model with fewer covariates) to assess the sensitivity of the primary result to the covariate selection.
+
+SECTION IV: CONSISTENCY BETWEEN SAP AND CSR
+
+A critical compliance requirement is that the covariate adjustment model reported in the CSR matches the model pre-specified in the SAP exactly. Common inconsistencies identified in FDA statistical reviews include: additional covariates added to the analysis model not present in the SAP, covariate coding different from the SAP (e.g., continuous covariate treated as categorical), stratification factors omitted from the analysis model, and different interaction terms used.
+
+Any deviation from the pre-specified model in the CSR analysis must be clearly documented, with the pre-specified analysis results also reported as sensitivity analysis. A CSR that reports only a post-hoc modified covariate model without reporting the pre-specified model is not acceptable.
+
+SECTION V: STRATIFICATION FACTORS
+
+When the randomisation procedure uses stratification, the stratification factors play a dual role: they are used in the randomisation algorithm (ensuring balance) and they must be included in the primary analysis (adjusting for their prognostic impact). An analysis that uses stratified randomisation but ignores the stratification factors in the primary analysis is statistically inconsistent and may be underpowered.
+
+FDA has repeatedly issued queries in statistical review letters when sponsors use stratified randomisation but do not include stratification factors in the primary analysis model. This is a preventable compliance finding that requires explicit pre-specification in the SAP: "The primary analysis will include [stratification factor 1] and [stratification factor 2] as covariates, consistent with the randomisation stratification."

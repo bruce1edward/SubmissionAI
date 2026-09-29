@@ -1,0 +1,63 @@
+FDA GUIDANCE: MULTIPLE ENDPOINTS IN CLINICAL TRIALS
+Document Code: FDA-ENDPOINTS
+Effective Date: January 2023
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION I: INTRODUCTION
+
+This guidance addresses the design and analysis of clinical trials with multiple endpoints. Multiple endpoints are almost universally present in Phase 3 trials — there is typically one primary endpoint and several secondary and exploratory endpoints. The challenge of multiple endpoints is the multiplicity problem: when multiple statistical tests are conducted, the probability that at least one will produce a false-positive result by chance increases with the number of tests. This guidance describes FDA's expectations for controlling the Type I error rate in trials with multiple endpoints.
+
+SECTION II: CLASSIFICATION OF ENDPOINTS
+
+A. Primary Endpoints
+A primary endpoint is the endpoint that provides the main evidence of efficacy for the indication being sought. There is typically one primary endpoint per indication per trial. If multiple endpoints are designated as co-primary, all must achieve statistical significance (unless a pre-specified alternative rule is used), which substantially reduces the study power.
+
+B. Key Secondary Endpoints
+Key secondary endpoints are endpoints that the sponsor intends to make labelling claims about if the trial is successful. The statistical testing of key secondary endpoints must be protected from inflation of the Type I error rate, typically by a hierarchical testing procedure that begins testing secondary endpoints only after the primary endpoint has achieved statistical significance.
+
+C. Other Secondary and Exploratory Endpoints
+Secondary endpoints that are not designated as key secondary, and all exploratory endpoints, are not confirmatory. Results for these endpoints are interpreted as hypothesis-generating and are not subject to the same multiplicity control requirements. However, the SAP must clearly distinguish which endpoints are key secondary (controlled multiplicity) and which are other secondary or exploratory (uncontrolled multiplicity).
+
+SECTION III: MULTIPLICITY CONTROL METHODS
+
+A. Hierarchical (Fixed-Sequence) Testing
+The most common multiplicity control approach in Phase 3 trials is hierarchical testing, also called the fixed-sequence procedure. Endpoints are ranked in a pre-specified order. The first endpoint (primary) is tested at the full alpha level (typically 0.025 one-sided). If the primary endpoint is statistically significant, the second endpoint is tested at the full alpha level. Testing proceeds sequentially until an endpoint fails to achieve significance, at which point testing stops and all subsequent endpoints are interpreted as exploratory.
+
+The testing hierarchy and the specific endpoints in each position must be pre-specified in the SAP before unblinding. Changing the testing hierarchy after seeing the data — for example, moving an endpoint from position 3 to position 2 because the position-2 endpoint is expected to fail — is a critical compliance finding that invalidates the confirmatory status of all endpoints in the hierarchy.
+
+B. Gatekeeping Procedures
+Gatekeeping procedures allow testing of endpoints in "families," where all endpoints in one family must meet a specified criterion before any endpoint in the next family is tested. Parallel gatekeeping allows multiple endpoints in the same family to be tested simultaneously. Hierarchical gatekeeping combines family-level and sequential within-family testing.
+
+Gatekeeping procedures are more complex than simple hierarchical testing and require explicit pre-specification of: the families of endpoints, the gatekeeping criterion for each family (e.g., all must be significant, or at least one must be significant), the within-family error rate control method (e.g., Holm procedure), and the alpha propagation rule across families (e.g., full alpha propagation or weighted).
+
+C. Bonferroni and Holm Procedures
+The Bonferroni correction divides the total alpha equally among all tests. This is highly conservative when endpoints are positively correlated and is generally not recommended for Phase 3 trials with multiple correlated endpoints. The Holm step-down procedure is uniformly more powerful than Bonferroni and controls the FWER for any correlation structure. Holm is acceptable as a secondary procedure within a family of endpoints.
+
+D. Pre-specification Requirement for FWER Control
+The SAP must pre-specify: which endpoints are subject to formal FWER control, the specific procedure for FWER control (hierarchical, gatekeeping, Holm, etc.), the alpha allocated to each endpoint or family, and the testing order. This pre-specification requirement is stated in Section III.C of this guidance: "When the intent is to support specific conclusions on how a treatment affects specific components, the SAP must pre-specify the testing hierarchy and the family-wise error rate control procedure."
+
+SECTION IV: CO-PRIMARY ENDPOINTS
+
+When two or more endpoints are designated as co-primary, the trial provides valid evidence of efficacy only if all co-primary endpoints achieve statistical significance. The power calculation for a co-primary endpoint design must account for the requirement that all endpoints achieve significance simultaneously, which reduces the overall power compared to a single-primary-endpoint design.
+
+The SAP must specify whether the co-primary endpoints are tested at the full alpha level each (which requires that all achieve significance) or whether a multiplicity adjustment applies to the co-primary family (which is less common but possible). The pre-specified rule for interpreting co-primary endpoints must be stated clearly.
+
+SECTION V: ENDPOINT HIERARCHY CONSISTENCY BETWEEN SAP AND CSR
+
+A common compliance issue is inconsistency between the testing hierarchy specified in the SAP and the presentation of results in the CSR. Specifically:
+
+(1) Endpoints presented as "key secondary" in the CSR table of contents or results section were not listed as key secondary in the SAP, but were instead listed as "exploratory." Reclassifying endpoints post-hoc from exploratory to key secondary is not acceptable.
+
+(2) The testing order in the CSR results section differs from the SAP hierarchy — for example, DOR results are presented before PFS results in the CSR even though PFS was listed second in the testing hierarchy. This creates the false impression that DOR was tested before PFS.
+
+(3) The CSR reports statistically significant results for endpoints that were below a failed endpoint in the testing hierarchy, implying these results are confirmatory when they are not.
+
+All of these inconsistencies are compliance findings that FDA statistical reviewers will identify. The SAP must be the authoritative document for the testing hierarchy, and the CSR must clearly follow the SAP hierarchy, including explicitly noting when the testing sequence was stopped due to a failed endpoint.
+
+SECTION VI: ALPHA ALLOCATION FOR MULTIPLE INDICATIONS
+
+When a trial is designed to support two indications (e.g., a broad population and a biomarker-positive subgroup), the alpha must be split between the two indications or a hierarchical testing order must be pre-specified (e.g., test the broad population first; if successful, test the biomarker subgroup at full alpha). The alpha allocation strategy must be pre-specified in the SAP and must control the overall FWER at 0.025 (one-sided).
+
+SECTION VII: SAMPLE SIZE FOR MULTIPLE ENDPOINTS
+
+The sample size must be adequate for the primary endpoint. Secondary endpoints are typically assessed with lower power, but if any key secondary endpoint is intended to support a labelling claim, it should have adequate power specified in the SAP. Power calculations for key secondary endpoints must be explicitly provided in the SAP or the protocol, using the same principles as for the primary endpoint (specifying the effect size, power, and alpha after accounting for multiplicity).
