@@ -16,6 +16,8 @@ A fresh document-review harness that remembers approved corrections, resumes fro
 
 The active application at the repository root is the Continuity review harness. The earlier Streamlit implementation and its regulatory knowledge bases are preserved under `archive/SubmissionAI/`; an even earlier repository snapshot is preserved under `archive/SubmissonAI/`. The active application does not import either archive. See [repository provenance](docs/REPOSITORY_PROVENANCE.md) and [development history](docs/DEVELOPMENT_HISTORY.md) for the original commit histories and the distinction between recorded publication dates and actual development time.
 
+Original software and authored documentation are available under the [MIT license](LICENSE). Historical regulatory source material and other third-party content retain their original rights; see [licensing scope](docs/LICENSING.md).
+
 **Event eligibility: pending organizer clarification.** The [eligibility request and evidence timeline](docs/EVENT_ELIGIBILITY.md) identify the pre-start baseline and subsequent verification records. The request is prepared but has not been sent; no organizer ruling has been received.
 
 ## Run locally
