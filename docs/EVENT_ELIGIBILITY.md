@@ -5,11 +5,11 @@ Status: prepared for Bruce to send or discuss with organizers. Not sent. No elig
 ## Ready-to-send message
 
 Hi CV team — I need an eligibility ruling for my solo project, SubmissionAI:
-https://github.com/bruce1edward/Submission-AI
+https://github.com/bruce1edward/SubmissionAI
 
 It is a separate implementation from my earlier Streamlit project, but I started the new implementation before the scheduled hacking start. A baseline harness commit is timestamped September 26 at 8:34 a.m. EDT, before the guide's 10:30 a.m. start. That baseline already contained memory, checkpoints, revision tracking, a review UI, and initial model/vector integration code.
 
-I subsequently extended the provider and retrieval integration and completed live Atlas Sandbox/model/vector-search testing and the v1–v3 rehearsal. The verification reports are timestamped between 12:31 p.m. and 2:20 p.m. EDT. Those timestamps establish when the recorded tests ran, not when all implementation began. The new repository is a publication of that work; it does not change the development timeline.
+I subsequently extended the provider and retrieval integration and completed live Atlas Sandbox/model/vector-search testing and the v1–v3 rehearsal. The verification reports are timestamped between 12:31 p.m. and 2:20 p.m. EDT. Those timestamps establish when the recorded tests ran, not when all implementation began. This consolidated repository preserves both the earlier and later source histories; its publication does not change the development timeline.
 
 Does the event permit this pre-start baseline with disclosed later contributions? If so, which features may I demonstrate and have judged? If the entire entry is ineligible under the new-work rule, is there an approved way to participate with a separately scoped new component, or as a noncompetitive demo?
 
