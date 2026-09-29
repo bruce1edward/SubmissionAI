@@ -1,0 +1,86 @@
+ICH E9(R1) ESTIMANDS AND SENSITIVITY ANALYSIS — OFFICIAL TRAINING MATERIAL
+Document Code: ICH-E9R1-TM
+Effective Date: 2020
+Regulatory Body: ICH
+
+SECTION 1: INTRODUCTION TO THE ESTIMAND FRAMEWORK
+
+The ICH E9(R1) addendum introduced the estimand framework to bring precision to the description of what a clinical trial is designed to estimate. The framework resolves longstanding ambiguities about how intercurrent events — events that occur after randomisation and affect the interpretation of the primary endpoint — should be handled in clinical trial design, conduct, and analysis.
+
+The five attributes of an estimand must all be defined before a trial begins and must be consistently reflected in the protocol, the Statistical Analysis Plan (SAP), and the Clinical Study Report (CSR). Inconsistency between these documents in the handling of any intercurrent event is a compliance finding under ICH E9(R1).
+
+SECTION 2: THE FIVE ESTIMAND ATTRIBUTES — DETAILED EXAMPLES
+
+2.1 Population
+The population attribute defines which subjects the treatment effect applies to. It must be defined precisely enough to determine, for every enrolled subject, whether they are part of the estimand population. Vague definitions such as "subjects with the disease" are insufficient; the definition must match the eligibility criteria exactly and specify how subjects who are later found to have violated eligibility criteria are handled.
+
+Example (CORRECT): "All randomised subjects who have histologically confirmed NSCLC with ECOG performance status 0 or 1 at baseline, regardless of subsequent eligibility violations."
+Example (INCORRECT): "Subjects who completed the study" — this creates a post-randomisation restriction that distorts the estimand.
+
+2.2 Treatment Condition
+The treatment condition defines the specific treatments being compared, including formulation, dose, and schedule. If dose modifications are planned, the estimand must specify whether the treatment condition refers to the assigned dose or the actually received dose.
+
+2.3 Variable (Endpoint)
+The variable must be defined precisely for every subject, including subjects who experience intercurrent events. If the variable cannot be measured after an intercurrent event (e.g., death), the estimand must specify how that subject's outcome contributes to the analysis.
+
+2.4 Intercurrent Event Strategy
+This is the most operationally critical attribute. An intercurrent event is any event occurring after randomisation that affects either the interpretation or existence of the endpoint measurement. Common intercurrent events in oncology trials include: treatment discontinuation, dose reduction, initiation of subsequent anti-cancer therapy, and death before the assessment window.
+
+For each intercurrent event, exactly one strategy must be pre-specified in the SAP:
+
+TREATMENT POLICY STRATEGY: The outcome is measured regardless of whether the intercurrent event occurred. This reflects the real-world use of the treatment including its downstream consequences. In oncology ORR trials, this means responses after dose reduction or treatment hold are still counted.
+
+COMPOSITE VARIABLE STRATEGY: The intercurrent event is incorporated into the definition of the variable. A subject who discontinues treatment before Week 8 is assigned a "non-response" or worst-rank outcome. This is conservative and commonly used for regulatory purposes.
+
+HYPOTHETICAL STRATEGY: The analysis estimates what the outcome would have been in the counterfactual world where the intercurrent event did not occur. This requires assumptions about the counterfactual outcome and is typically implemented via multiple imputation. This strategy is appropriate when the clinical question is about the pharmacological effect of the treatment in the absence of adherence problems.
+
+WHILE ON TREATMENT STRATEGY: Only outcomes observed while the subject remains on treatment are included. Measurements after discontinuation are censored or excluded. This is appropriate when the clinical question concerns the effect during active treatment.
+
+PRINCIPAL STRATUM STRATEGY: The analysis is restricted to the subgroup of subjects who would not have experienced the intercurrent event under the treatment condition of interest. This is the most complex strategy and requires strong assumptions about the latent subgroup membership.
+
+2.5 Population-Level Summary
+The population-level summary is the statistical measure used to compare outcomes across treatment groups — for example, the difference in proportions, the odds ratio, the hazard ratio, or the difference in means.
+
+SECTION 3: CROSS-DOCUMENT CONSISTENCY REQUIREMENTS
+
+3.1 Protocol, SAP, and CSR Alignment
+ICH E9(R1) requires that the estimand defined in the protocol is reflected consistently in the SAP and the CSR. A common compliance failure is that the SAP defines an intercurrent event strategy (e.g., composite variable for treatment discontinuation) but the CSR analysis section uses a different approach (e.g., treatment policy, counting outcomes after discontinuation). This inconsistency is a finding that FDA statistical reviewers specifically look for.
+
+3.2 SAP Amendment Requirements
+If the estimand is modified after the protocol is finalised — for example, an intercurrent event is reclassified from treatment policy to composite variable — this constitutes a SAP amendment. Per ICH E9 §5.1, this amendment must be finalised before any unblinded data are reviewed. An amendment to the intercurrent event handling strategy that occurs after database lock is a critical compliance finding.
+
+3.3 Sensitivity Analysis for Each Estimand
+ICH E9(R1) §4.2 requires that sensitivity analyses be pre-specified for the primary estimand. These sensitivity analyses assess whether the primary analysis conclusion is robust to alternative assumptions about the missing data mechanism and the intercurrent event strategy. Common sensitivity analysis patterns include: using a different imputation method (e.g., MNAR instead of MAR), using a different intercurrent event strategy (e.g., treatment policy instead of composite variable), and using tipping-point analysis.
+
+SECTION 4: CASE STUDIES — CORRECT AND NON-COMPLIANT IMPLEMENTATIONS
+
+4.1 Case Study 1: ORR in an Oncology Trial — Compliant Implementation
+Trial: Phase 3 NSCLC trial comparing experimental kinase inhibitor vs. chemotherapy.
+Primary estimand: Response rate (complete + partial response by RECIST 1.1) in all randomised subjects (treatment policy strategy for treatment discontinuation — responses after dose modification counted; composite variable strategy for death — subjects who die before Week 8 assessment are assigned non-responders).
+SAP pre-specification date: October 15, 2023 (before first patient enrolled November 1, 2023).
+Database lock: May 10, 2025. No SAP amendments after database lock.
+CSR analysis: Consistent with SAP estimand — responses after dose modification included, deaths assigned non-responder.
+Verdict: COMPLIANT.
+
+4.2 Case Study 2: ORR in an Oncology Trial — Non-Compliant Implementation
+Trial: Same design as above.
+SAP Version 1.0: Composite variable strategy for treatment discontinuation (discontinuations = non-responders).
+SAP Version 2.1: Submitted January 26, 2026 — 47 days after database lock date of December 10, 2025. SAP v2.1 changes the strategy for treatment discontinuation from composite variable to treatment policy (responses after discontinuation counted).
+This change materially affects the primary endpoint definition after unblinding was possible.
+Finding: NON-COMPLIANT per ICH E9 §5.1 and ICH E9(R1) §3.2. Sensitivity analysis under SAP v1.0 definition required.
+
+SECTION 5: SENSITIVITY ANALYSIS PRE-SPECIFICATION REQUIREMENTS
+
+Per ICH E9(R1) §4.2, sensitivity analyses must be pre-specified in the SAP and must be clearly distinguished from supplementary analyses. A sensitivity analysis addresses the same estimand as the primary analysis but uses different assumptions or methods. A supplementary analysis addresses a different estimand.
+
+Pre-specified sensitivity analyses for the primary estimand should address: the impact of missing outcome data (e.g., tipping-point analysis if the primary analysis uses MAR imputation), the impact of the intercurrent event strategy choice (e.g., treatment policy sensitivity if the primary uses composite variable), and the impact of influential observations or outliers for continuous endpoints.
+
+The SAP must list all pre-specified sensitivity analyses with their methods, assumptions, and the specific parameter being varied. Sensitivity analyses added in the CSR that are not in the SAP are post-hoc analyses, must be labelled as such, and cannot be used to support primary efficacy conclusions.
+
+SECTION 6: ESTIMAND ATTRIBUTE COUNT VALIDATION
+
+A rapid deterministic check for estimand completeness counts whether all five attributes are present and defined for the primary endpoint. A SAP that describes the endpoint variable and the population-level summary but does not explicitly specify the intercurrent event strategy for each identified intercurrent event fails this check. The intercurrent event strategy section of the SAP must enumerate each intercurrent event by name and assign it one of the five strategies. A generic statement such as "missing data will be handled by multiple imputation" does not constitute an intercurrent event strategy definition.
+
+SECTION 7: REGULATORY REVIEW IMPLICATIONS
+
+FDA statistical reviewers (Office of Biostatistics) specifically evaluate the consistency of the estimand framework implementation between the SAP and the CSR as a standard component of NDA/BLA review. The most common statistical review letter queries related to estimands are: (1) intercurrent event strategy not defined for one or more post-baseline events, (2) CSR analysis inconsistent with the SAP estimand strategy, and (3) sensitivity analyses in the CSR not pre-specified in the SAP.

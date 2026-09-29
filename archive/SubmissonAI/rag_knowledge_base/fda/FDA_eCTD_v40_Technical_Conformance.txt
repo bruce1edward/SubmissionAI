@@ -1,0 +1,86 @@
+FDA eCTD v4.0 TECHNICAL CONFORMANCE GUIDE
+Effective Date: September 16, 2024
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 1: INTRODUCTION
+
+This Technical Conformance Guide (TCG) describes FDA's technical requirements for electronic submissions using the eCTD v4.0 specification. All INDs, NDAs, BLAs, ANDAs, and DMFs submitted electronically to FDA must comply with this guide. The eCTD v4.0 specification is based on HL7 v3 RPS (Regulated Product Submission) standards and replaces the eCTD v3.2.2 specification for new sequences submitted after the implementation date.
+
+SECTION 2: eCTD v4.0 STRUCTURE OVERVIEW
+
+2.1 Submission Unit
+In eCTD v4.0, each submission sequence is a submission unit. The submission unit is defined by a submissionunit.xml file, which is the authoritative message file for the submission. The submissionunit.xml must conform to the FDA-published schema. Submissions that do not contain a valid submissionunit.xml will be considered technically invalid and may be refused.
+
+2.2 Context of Use (CoU)
+The Context of Use replaces the eCTD v3.2.2 "leaf" concept. Each document is placed into the submission via a Context of Use entry that specifies the document's heading in the CTD structure. CoU entries must use the FDA-published vocabulary to specify heading codes, document type codes, and any applicable keywords.
+
+2.3 Sequence Numbers
+Sequence numbers remain four-digit zero-padded integers starting at 0000 for the initial submission and incrementing by one for each subsequent submission. The sequence number must appear in the submission unit identifier and must not be reused.
+
+2.4 Module Structure
+The eCTD v4.0 module structure follows the ICH CTD organization:
+- Module 1 (M1): Administrative information specific to each regulatory region
+- Module 2 (M2): Summaries and overviews of the CTD content
+- Module 3 (M3): Quality (Chemistry, Manufacturing, and Controls)
+- Module 4 (M4): Nonclinical Study Reports
+- Module 5 (M5): Clinical Study Reports
+
+M1 content for US submissions uses US-specific document types and headings as defined in the FDA eCTD v4.0 heading vocabulary. M2 through M5 use the ICH-harmonized headings.
+
+SECTION 3: FILE NAMING CONVENTIONS
+
+3.1 General Requirements
+File names must be in lowercase. File names must not contain spaces. Permitted characters are lowercase letters (a-z), digits (0-9), hyphens (-), underscores (_), and periods (.) as the extension separator. File names must be descriptive enough to convey the document content. All file names must be unique within the submission.
+
+3.2 Path Length Limitation
+The total file path length, including folder names and the file name itself, must not exceed 180 characters. Paths exceeding this limit may cause technical failures in FDA's internal systems. Sponsors should design their folder hierarchies to use concise but descriptive folder names.
+
+3.3 File Extensions
+All files must have appropriate extensions that reflect the file format. PDF files must use the .pdf extension. XML files must use the .xml extension. All PDFs in an eCTD submission must be Section 508 compliant and searchable (i.e., not scanned images without an OCR layer).
+
+3.4 Folder Hierarchy
+Folder names must follow the same naming conventions as files: lowercase, no spaces, permitted characters only. The top-level module folders must be named m1, m2, m3, m4, and m5. Sub-folder names should be descriptive and follow logical grouping by CTD heading. Nesting more than five levels deep is discouraged as it contributes to path length issues.
+
+SECTION 4: SUBMISSIONUNIT.XML REQUIREMENTS
+
+4.1 Schema Compliance
+The submissionunit.xml must validate against the FDA-published W3C XML schema for eCTD v4.0. Submissions with schema validation errors will not be processed. Sponsors should validate the submissionunit.xml against the published schema before submission.
+
+4.2 Mandatory Elements
+The submissionunit.xml must contain: submission unit identifier, sequence number, submission type, application type and number, sponsor name, and Context of Use entries for all documents in the submission. Optional elements such as related submission references should be included where applicable.
+
+4.3 Document References
+All documents referenced in the submissionunit.xml must be present in the submission package at the specified relative paths. Missing documents or documents at incorrect paths will cause processing failures.
+
+4.4 Lifecycle Operations
+The eCTD v4.0 supports lifecycle operations for each Context of Use: new, replace, append, and delete. The operation must correctly reflect the intent: use "new" for documents appearing for the first time under a heading, "replace" to replace a prior document under the same heading, and "delete" to remove a document that should no longer be considered.
+
+SECTION 5: DOCUMENT STANDARDS
+
+5.1 PDF Requirements
+All PDF documents must: be PDF version 1.4 or higher, be bookmarked with a minimum of one bookmark per major section, have selectable and searchable text (not scanned images), have page numbers using Arabic numerals, and have hyperlinks for all internal and external cross-references.
+
+5.2 File Size
+Individual file sizes should not exceed 100 MB. Files approaching this limit should be split into logical segments. The total submission size should not exceed practical limits for FDA's electronic gateway submission system.
+
+5.3 XML Documents
+Define.xml files for CDISC datasets must conform to the CDISC Define-XML specification. Other XML files must specify the applicable schema and must validate against it.
+
+SECTION 6: VALIDATION AND TECHNICAL ACCEPTANCE
+
+6.1 Pre-Submission Validation
+Sponsors must validate submissions using the FDA-provided Submission Validation Tool (SVT) or equivalent before submission. The SVT checks schema compliance, file presence, and naming conventions. Submissions that fail SVT validation should not be submitted until the errors are resolved.
+
+6.2 FDA Technical Acceptance
+Upon receipt, FDA's systems perform automated technical screening. Submissions that pass technical screening receive a technical acceptance notification. Submissions that fail technical screening receive a refuse-to-file (RTF) or refuse-to-receive (RTR) notification identifying the specific technical deficiencies.
+
+6.3 Common Technical Deficiencies
+Frequently observed technical deficiencies include: submissionunit.xml not present or not schema-valid, file paths exceeding 180 characters, file names containing uppercase letters or spaces, PDF files containing scanned images without searchable text, and missing documents referenced in submissionunit.xml.
+
+SECTION 7: TRANSITION FROM eCTD v3.2.2
+
+For applications currently active in eCTD v3.2.2, FDA has provided transition guidance specifying when new sequences must use eCTD v4.0. Sponsors should consult the most recent FDA guidance on eCTD implementation timelines. Legacy eCTD v3.2.2 sequences remain valid; only new sequences submitted after the implementation date must use eCTD v4.0.
+
+SECTION 8: REGIONAL MODULE 1 CONTENT
+
+Module 1 content for US submissions includes Form FDA 1571 (IND) or Form FDA 356h (NDA/BLA), the cover letter, the Table of Contents, the contact information, all debarment certifications, and any other US-specific administrative documents. The headings and document type codes for Module 1 documents are published in the FDA eCTD heading vocabulary list, which is updated periodically on the FDA website.

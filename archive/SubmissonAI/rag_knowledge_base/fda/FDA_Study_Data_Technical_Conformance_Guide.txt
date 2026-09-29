@@ -1,0 +1,69 @@
+FDA STUDY DATA TECHNICAL CONFORMANCE GUIDE
+Effective Date: May 1, 2023
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 1: INTRODUCTION
+
+This guide describes FDA's requirements for the format and content of study data submitted in support of marketing applications and clinical trial applications. FDA requires that study data be submitted in standardized formats to enable efficient review and to allow reanalysis of submitted data. The primary standardized formats accepted by FDA are CDISC SDTM (Study Data Tabulation Model) for tabulation datasets and CDISC ADaM (Analysis Data Model) for analysis datasets.
+
+SECTION 2: CDISC STANDARDS REQUIREMENTS
+
+2.1 SDTM Requirements
+Clinical trial data submitted to FDA must be in the SDTM format. SDTM organizes data into domain-level datasets (e.g., DM for demographics, AE for adverse events, LB for laboratory results, EX for exposure, VS for vital signs) with defined variable naming conventions, controlled terminology, and structural rules. The version of SDTM used must be stated in the submission, and the data must conform to the rules of that version.
+
+2.2 ADaM Requirements
+Analysis datasets used to produce efficacy and safety analyses must be in the ADaM format. ADaM datasets must trace back to SDTM source data. The ADaM dataset for the primary efficacy analysis must be provided. The key ADaM datasets are ADSL (Subject-Level Analysis Dataset) and ADTTE (Time-to-Event), ADQS (questionnaire), and ADAE (Adverse Events), among others.
+
+2.3 SEND Requirements
+Nonclinical study data submitted in support of INDs and NDAs must be in the SEND (Standard for Exchange of Nonclinical Data) format for applicable toxicology studies. The applicable SEND implementation guides for the specific study type and toxicological domain must be followed.
+
+SECTION 3: DEFINE.XML
+
+3.1 Purpose and Requirements
+A define.xml file must accompany each dataset package. The define.xml provides the metadata for all datasets, variables, value-level metadata, and controlled terminology references. It links data to the CRF (Case Report Form) or computational derivation algorithm for each variable. FDA reviewers use the define.xml to understand what each variable represents and how it was derived.
+
+3.2 Controlled Terminology
+All codelist values must use terminology from the CDISC controlled terminology repository unless sponsor-specific terminology is used and documented. Sponsor-specific controlled terminology extensions must be declared in the define.xml and must not overlap with CDISC controlled terminology.
+
+SECTION 4: REVIEWER'S GUIDES
+
+4.1 Study Data Reviewer's Guide (SDRG)
+The Study Data Reviewer's Guide is required for each study. It describes how to navigate the SDTM datasets for that study, explains complex derivations, identifies the datasets relevant to the primary and secondary efficacy analyses, and lists any deviations from the applicable CDISC standards with justification.
+
+4.2 Analysis Data Reviewer's Guide (ADRG)
+The Analysis Data Reviewer's Guide is required for the primary analysis package. It describes how the ADaM datasets were created, how they link to the SDTM source data, how to replicate the primary efficacy analysis, and any sponsor-specific programming choices or non-standard approaches.
+
+SECTION 5: DATASET ORGANIZATION AND SUBMISSION PACKAGE
+
+5.1 File Naming and Organization
+SDTM datasets must use the domain abbreviation as the file name (e.g., ae.xpt for adverse events, lb.xpt for laboratory data). ADaM dataset file names must begin with "ad" (e.g., adsl.xpt, adtte.xpt). All datasets must be in SAS Transport format version 5 (.xpt).
+
+5.2 Traceability
+A critical requirement is that every analysis result in the clinical study report must be traceable from the final result back through the analysis dataset to the tabulation dataset to the source data. Traceability is demonstrated through the define.xml variable derivation algorithms, annotated CRFs, ADRG program descriptions, and analysis program code.
+
+5.3 Analysis Program Code
+FDA strongly encourages submission of the actual SAS or R programs used to produce the primary analysis results. When code is submitted, it must be in a human-readable format with sufficient comments to understand the logic without running the program.
+
+SECTION 6: TRANSPORT FILE REQUIREMENTS
+
+6.1 SAS Transport Format
+All datasets must be submitted as SAS Transport version 5 files (.xpt). The dataset label, variable labels, and formats must be populated. Variable names must not exceed 8 characters. Variable labels must not exceed 40 characters for SDTM (200 characters for ADaM).
+
+6.2 Dataset Size
+Individual dataset files should not exceed 5 GB. If an individual dataset exceeds this limit, it should be split into logical subsets (e.g., split the adverse event dataset by study or by body system) with a naming convention that makes the splits clear.
+
+SECTION 7: TIMING OF STUDY DATA SUBMISSION
+
+7.1 New Applications
+For NDA and BLA submissions, all study data supporting safety and efficacy claims must be submitted in the original application filing. Datasets arriving after the NDA/BLA filing date require a major amendment and may significantly delay the review timeline.
+
+7.2 INDs and Phase 2/3 Studies
+For IND annual reports and protocol amendments, study data from completed Phase 2 studies supporting Phase 3 design decisions may be submitted voluntarily. Early submission of tabulation and analysis data enables FDA reviewers to evaluate the Phase 2 evidence and provide more specific comments during End-of-Phase 2 meetings.
+
+SECTION 8: VALIDATION AND CONFORMANCE CHECKS
+
+8.1 Pinnacle 21 Validation
+Sponsors are expected to validate their datasets using Pinnacle 21 (P21) or an equivalent validation tool before submission. P21 checks datasets against the CDISC SDTM and ADaM implementation guides and generates a validation report listing errors and warnings. Errors (severity level) must be resolved. Warnings should be resolved or documented with justification.
+
+8.2 Acceptable Deviations
+Where CDISC standards cannot be implemented as specified (e.g., due to legacy data collection systems), the deviation must be documented in the SDRG or ADRG with a justification. FDA evaluates deviations on a case-by-case basis. Undocumented deviations may result in data review delays.

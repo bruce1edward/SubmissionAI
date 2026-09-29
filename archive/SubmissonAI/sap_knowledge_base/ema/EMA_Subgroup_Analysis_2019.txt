@@ -1,0 +1,67 @@
+EMA GUIDELINE ON THE INVESTIGATION OF SUBGROUPS IN CONFIRMATORY CLINICAL TRIALS
+Document Code: EMA-SUBGROUP
+Effective Date: January 2019
+Regulatory Body: EMA (European Medicines Agency)
+
+SECTION 1: INTRODUCTION
+
+This guideline addresses the investigation of subgroups in confirmatory clinical trials. Subgroup analyses are among the most commonly misused tools in clinical trial reporting. The fundamental problem is that the number of possible subgroup analyses is virtually unlimited — any combination of baseline characteristics defines a subgroup — and in a finite dataset, some subgroup will appear to respond differently from the overall population purely by chance. This guideline distinguishes between pre-specified subgroup analyses that are part of the confirmatory analysis plan and post-hoc or exploratory subgroup analyses that are hypothesis-generating only.
+
+SECTION 2: REGULATORY CONTEXT
+
+2.1 Subgroups in Registration Studies
+EMA expects that confirmatory Phase 3 trials are designed to demonstrate efficacy in the overall trial population, as defined by the inclusion/exclusion criteria. Subgroup analyses are secondary to this primary objective. A successful overall trial result is required before subgroup results can support labelling claims. A trial that fails to demonstrate efficacy in the overall population but appears successful in a post-hoc subgroup is not an acceptable basis for approval.
+
+Exceptions exist when the enrichment strategy is pre-specified and the trial is designed ab initio to enrol a biomarker-defined population. In such cases, the biomarker-positive subgroup is effectively the primary analysis population and must be treated as such in the SAP.
+
+2.2 EMA Position on Subgroup Analyses
+EMA's position is that subgroup analyses should be: pre-specified in the SAP before unblinding, limited in number to avoid excessive Type I error inflation, supported by a biological rationale, and accompanied by a formal interaction test between treatment and subgroup membership.
+
+SECTION 3: CLASSIFICATION OF SUBGROUP ANALYSES
+
+3.1 Pre-Specified Confirmatory Subgroup Analyses
+A pre-specified confirmatory subgroup analysis is one that: is defined in the SAP before unblinding, has a specific statistical hypothesis (e.g., "treatment effect is at least X% in the biomarker-positive subgroup"), is supported by prior biological or clinical evidence of effect modification, and is included in the multiplicity control framework (i.e., alpha is allocated to this analysis).
+
+Pre-specified confirmatory subgroup analyses can support labelling claims if they achieve statistical significance and if the biological rationale is convincing. Even pre-specified subgroup analyses are subject to replication requirements — a single trial's subgroup result rarely provides sufficient evidence for a claim restricted to that subgroup.
+
+3.2 Pre-Specified Exploratory Subgroup Analyses
+A pre-specified exploratory subgroup analysis is one that is defined in the SAP before unblinding but is not allocated alpha and is not intended to support a labelling claim. These analyses are performed to understand the consistency of the treatment effect across patient subgroups and to generate hypotheses for future trials.
+
+Pre-specified exploratory subgroup analyses must be clearly labelled as such in the CSR. The phrase "pre-specified exploratory" is the appropriate designation. Results of these analyses can be presented in the CSR and in regulatory submissions as supportive evidence but not as primary efficacy evidence.
+
+3.3 Post-Hoc Subgroup Analyses
+A post-hoc subgroup analysis is any analysis of a subgroup that was not defined in the SAP before unblinding, or any analysis that uses a cutoff, coding, or definition that differs from the pre-specified definition. Post-hoc subgroup analyses are exploratory by definition and must be clearly labelled in the CSR as "post-hoc exploratory." Presenting post-hoc subgroup results without this label — for example, presenting them in the main efficacy results table alongside pre-specified analyses — creates a misleading impression of confirmatory evidence.
+
+SECTION 3.2: PRE-SPECIFICATION LABELLING REQUIREMENTS
+
+Section 3.2 of this guideline specifies the labelling requirements for subgroup analyses in clinical study reports:
+
+"Every subgroup analysis reported in the clinical study report must be unambiguously classified as one of the following: (a) pre-specified confirmatory, (b) pre-specified exploratory, or (c) post-hoc exploratory. This classification must be consistent with the pre-unblinding SAP. Any subgroup analysis presented in the CSR that is labelled differently from the SAP classification is a compliance finding."
+
+"The CSR must include a table listing all pre-specified subgroup analyses with their SAP reference (section and version), their classification, and their results. This table must clearly identify which analyses are confirmatory and which are exploratory."
+
+SECTION 4: INTERACTION TESTS
+
+4.1 Requirement for Interaction Tests
+When a subgroup analysis is presented as a primary or key finding, a formal statistical test of the interaction between treatment and subgroup membership (treatment-by-subgroup interaction) must be reported. The interaction test p-value provides evidence for whether the treatment effect is genuinely different between subgroups or whether the observed subgroup difference is within the range expected by chance.
+
+The interaction test should be pre-specified in the SAP. Using different interaction test methods in the CSR from those pre-specified in the SAP is a compliance finding.
+
+4.2 Interpretation of Interaction Tests
+A statistically significant interaction test (e.g., p < 0.05) provides some evidence that the treatment effect differs between subgroups. However, interaction tests are severely underpowered in typical Phase 3 trial sample sizes — a trial with 80% power to detect the overall treatment effect may have only 15-20% power to detect a clinically meaningful treatment-by-subgroup interaction. This means that a non-significant interaction test cannot rule out a clinically important subgroup difference.
+
+Conversely, because many interaction tests may be performed across many subgroups, a p-value of 0.05 for a single interaction test has limited diagnostic value. The interaction test results must be interpreted in the context of the number of subgroup analyses performed and the prior biological plausibility of the interaction.
+
+SECTION 5: FOREST PLOTS AND SUBGROUP PRESENTATIONS
+
+The forest plot is the standard graphical presentation for subgroup analyses. The SAP must pre-specify which subgroups will be included in the forest plot and in which order. The forest plot must include: the estimated treatment effect and 95% confidence interval for each subgroup, the number of subjects in each subgroup, and a test for interaction (or a clear notation that the interaction test was not pre-specified for that subgroup).
+
+Forest plots that include only subgroups with favourable results while omitting subgroups with unfavourable results are a form of selective reporting and are a compliance finding. All pre-specified subgroups must be included in the pre-specified forest plot, regardless of the direction or magnitude of the subgroup result.
+
+SECTION 6: CONSISTENCY BETWEEN SAP AND CSR
+
+The single most common subgroup compliance finding in EMA scientific assessments is the presence of subgroup analyses in the CSR that are labelled differently from the SAP. Specifically: the SAP labels a subgroup analysis as "exploratory" but the CSR presents it in the primary efficacy section without the "exploratory" label; the CSR presents the subgroup result with a p-value in a context that implies confirmatory status; or the CSR includes a forest plot subgroup that was not listed in the SAP. All of these constitute findings that the EMA will raise in a List of Questions or List of Outstanding Issues and that can delay marketing authorisation.
+
+SECTION 7: SAMPLE SIZE IMPLICATIONS OF SUBGROUP ANALYSES
+
+If the trial is designed to detect a treatment effect in the overall population, the subgroup analyses will be substantially underpowered. The SAP must acknowledge this limitation explicitly. If a specific subgroup is expected to show a larger treatment effect and the sponsor intends to make a labelling claim based on that subgroup, the trial should be powered for the subgroup analysis, which typically requires a larger overall sample size or a design that over-samples the subgroup.

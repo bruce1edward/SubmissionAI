@@ -1,0 +1,64 @@
+FDA GUIDANCE: FORMAL MEETINGS BETWEEN FDA AND SPONSORS OR APPLICANTS OF PDUFA PRODUCTS
+Effective Date: December 1, 2017
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 1: INTRODUCTION
+
+This guidance describes the types of formal meetings between FDA and sponsors or applicants for PDUFA (Prescription Drug User Fee Act) products, the procedures for requesting and preparing for these meetings, and the expected outputs. Effective use of formal meetings can significantly improve the efficiency of clinical development programs by aligning FDA and sponsor expectations before major development milestones.
+
+SECTION 2: MEETING TYPES
+
+2.1 Type A Meetings
+Type A meetings are critical path meetings needed to resolve problems that are blocking clinical development. They include meetings to discuss refuse-to-file issues, clinical holds, dispute resolution requests, and requests for special protocol assessments. FDA aims to schedule Type A meetings within 30 days of the meeting request. Type A meetings must be requested when development is at an impasse.
+
+2.2 Type B Meetings
+Type B meetings include Pre-IND meetings, End-of-Phase 1 meetings, End-of-Phase 2 (EOP2) meetings, pre-NDA/BLA meetings, and post-action meetings. FDA aims to schedule Type B meetings within 70 days of the meeting request. Type B meetings are the primary mechanism for aligning on Phase 3 design before major investment is committed.
+
+2.3 Type C Meetings
+Type C meetings cover any other formal meeting not classified as Type A or Type B. They include meetings to discuss Phase 2 protocol design, trial design questions not at the EOP2 milestone, CMC issues, and other development questions. FDA aims to schedule Type C meetings within 75 days of the meeting request.
+
+SECTION 3: END-OF-PHASE 2 (EOP2) MEETINGS
+
+3.1 Purpose and Importance
+The EOP2 meeting is the most strategically important meeting in the clinical development program for new molecular entities. It occurs after Phase 2 studies have been completed and their data are available, and before Phase 3 study initiation. The EOP2 meeting is the primary opportunity for a sponsor to obtain FDA's concurrence on: the Phase 3 study design(s), the primary endpoint and its measurement, the target patient population, the statistical analysis plan (including non-inferiority margins where applicable), and the CMC requirements for a pivotal trial.
+
+A successful EOP2 meeting reduces the risk of a Phase 3 program that fails to meet FDA's regulatory requirements. Issues identified at EOP2 that require design changes are far less costly to address than issues identified during NDA/BLA review.
+
+3.2 Timing
+The EOP2 meeting request should be submitted after Phase 2 data are mature and internally analyzed, but before Phase 3 activities have begun or irreversible commitments have been made. Submitting the meeting request before Phase 2 data are complete limits FDA's ability to provide meaningful feedback.
+
+3.3 Content of the Briefing Document
+The EOP2 meeting briefing document is a critical submission. It must be submitted at least 30 days before the meeting date. The briefing document must include:
+
+(a) Background on the indication: disease description, existing therapies, unmet need, and positioning of the product relative to the standard of care.
+
+(b) Phase 2 results summary: study design, enrolled population, key efficacy results with confidence intervals, full safety summary including grade 3/4 adverse events, serious adverse events, and discontinuation rates, dose-response data supporting dose selection, and subgroup analyses relevant to the Phase 3 population.
+
+(c) Proposed Phase 3 program: number of studies required, proposed study design including comparator, primary endpoint with definition and measurement method, secondary endpoints, analysis populations, statistical analysis approach including multiplicity strategy, and sample size with justification.
+
+(d) Proposed dose for Phase 3: the selected dose and the rationale based on Phase 2 efficacy and safety data.
+
+(e) Specific questions for FDA: all questions must be numbered and must be written so that FDA can provide a definitive written response. Avoid questions that are too broad to answer specifically.
+
+3.4 FDA Response to Briefing Document
+FDA provides written responses to sponsor questions in advance of the meeting. The meeting itself is used to discuss FDA's responses and resolve remaining questions. Written minutes are prepared after the meeting and, once finalized, constitute an agreement that has regulatory weight.
+
+SECTION 4: SPECIAL PROTOCOL ASSESSMENTS (SPAs)
+
+A Special Protocol Assessment (SPA) is an agreement between FDA and a sponsor on the design and analysis of a pivotal clinical trial. A sponsor submits an SPA request that includes the full protocol, including the statistical analysis plan. FDA evaluates the protocol and responds within 45 days indicating whether the design is adequate to support approval if the pre-specified outcomes are achieved. An SPA agreement provides regulatory certainty but does not guarantee approval; FDA retains the right to rescind the SPA if public health concerns emerge or if new information casts doubt on the adequacy of the protocol.
+
+SECTION 5: MEETING REQUEST FORMAT
+
+5.1 Content of Meeting Request
+A formal meeting request must include: the name of the product and application number, the type of meeting being requested, a list of the specific questions to be discussed, a proposed agenda, a list of proposed attendees from the sponsor, proposed dates and times, and the reason for the meeting.
+
+5.2 Briefing Document Submission
+The complete briefing document, including all supporting data, must be submitted at least 30 days before the scheduled meeting (for Type B meetings). Late briefing documents may result in the meeting being rescheduled.
+
+SECTION 6: POST-MEETING ACTIVITIES
+
+6.1 Written Minutes
+FDA prepares written minutes of all formal meetings. The minutes include a summary of the discussion and the conclusions reached. Sponsors should review the draft minutes carefully and submit any corrections within the time period specified by FDA. Finalized meeting minutes are part of the regulatory record and have significant weight in subsequent interactions.
+
+6.2 Implementing Meeting Outcomes
+Sponsor protocol amendments based on EOP2 meeting agreements should reflect the discussion precisely. If a Phase 3 protocol changes significantly from what was discussed at EOP2, sponsors should consider submitting an amended briefing document or requesting a follow-up meeting before initiating the study.

@@ -1,0 +1,77 @@
+ICH E9(R1) ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS
+Effective Date: November 20, 2019
+Regulatory Body: ICH (International Council for Harmonisation)
+
+SECTION 1: INTRODUCTION
+
+This addendum to ICH E9 introduces the estimand framework as a structured approach to align the clinical trial objective, the endpoint, the population, and the statistical analysis. The framework provides a common language between clinicians and statisticians to ensure that what is being estimated reflects the clinical question of interest. The addendum does not replace ICH E9 but supplements it.
+
+The estimand framework was developed in response to the recognition that the traditional emphasis on hypothesis testing often obscured the true question being answered. When intercurrent events (events that occur after randomization and before or at measurement of the endpoint variable) are handled inconsistently across trials and development programs, the treatment effect being estimated may not correspond to the clinical question. Explicit definition of the estimand eliminates this ambiguity.
+
+SECTION 2: THE ESTIMAND FRAMEWORK
+
+2.1 Attributes of an Estimand
+An estimand is a precise description of the treatment effect that addresses the clinical question posed by the trial objective. It is characterized by five attributes:
+
+(a) Population: The subject population relevant to the clinical question, defined by the eligibility criteria in the protocol.
+
+(b) Treatment condition: The treatments being compared, including formulation, dose, schedule, and route of administration.
+
+(c) Variable (endpoint): The endpoint used to measure or characterize the outcome for each subject, which is relevant to the clinical question.
+
+(d) Population-level summary: The summary measure used to compare the variable across subjects, such as a difference in means, an odds ratio, or a hazard ratio.
+
+(e) Intercurrent event strategy: The strategy for handling each intercurrent event that may occur after randomization and affect the interpretation or existence of the measurements.
+
+2.2 Intercurrent Events
+Intercurrent events are events that occur after randomization and affect either the interpretation or existence of measurements associated with the clinical endpoint. Common examples include discontinuation of assigned treatment, use of rescue medication, treatment switching, and death prior to the endpoint measurement window.
+
+Intercurrent events must be identified prospectively. For each intercurrent event, the protocol and SAP must pre-specify the strategy for handling it:
+
+(a) Treatment policy strategy: The intercurrent event is ignored and measurements after the event are included in the analysis regardless of the occurrence. This reflects the de facto effect of the treatment including its consequences such as discontinuation or rescue medication use.
+
+(b) Composite variable strategy: The intercurrent event is incorporated into the endpoint definition. For example, a subject who discontinues treatment early is assigned the worst possible outcome.
+
+(c) Hypothetical strategy: The counterfactual scenario is considered: what would the response have been had the intercurrent event not occurred? This is relevant for understanding the biological effect of treatment absent adherence issues.
+
+(d) Principal stratum strategy: The analysis is restricted to the subgroup of subjects who would not have experienced the intercurrent event under the treatment condition of interest.
+
+(e) While on treatment strategy: The variable is defined as the outcome while the subject remains on treatment. Measurements after discontinuation are not included.
+
+SECTION 3: CONSISTENCY BETWEEN ESTIMAND, ESTIMATOR, AND SENSITIVITY ANALYSES
+
+3.1 Estimator
+The estimator is the statistical method used to compute an estimate of the estimand from the data. The estimator must be consistent with the estimand definition. For example, if the estimand uses a treatment policy strategy for discontinuation (meaning discontinuations are included and contribute data), then a complete case analysis that excludes discontinuations would be inconsistent with the estimand.
+
+3.2 Sensitivity Analyses
+Sensitivity analyses assess the robustness of the primary analysis conclusions to alternative assumptions. They are a key component of the estimand framework. Sensitivity analyses are distinct from supplementary analyses: sensitivity analyses address the same estimand as the primary analysis but use different methods or assumptions, whereas supplementary analyses address different estimands.
+
+3.3 Pre-specification
+The estimand, estimator, and sensitivity analyses must be pre-specified in the protocol and elaborated in the SAP. Retrospective changes to the estimand definition or the handling of intercurrent events are difficult to justify and may be viewed skeptically by regulatory reviewers.
+
+SECTION 4: IMPLICATIONS FOR PROTOCOL AND SAP DEVELOPMENT
+
+4.1 Protocol Requirements
+The protocol must precisely define each intercurrent event anticipated in the study and pre-specify the strategy for handling each one. The primary estimand and any secondary estimands must be described in the protocol. Endpoints must be defined precisely enough to determine how each intercurrent event affects the endpoint.
+
+4.2 SAP Requirements
+The SAP must translate the estimand descriptions into specific statistical methods. For the treatment policy strategy, the SAP must specify how missing data arising from intercurrent events will be handled. For the hypothetical strategy, the SAP must describe the imputation or modeling approach used to estimate the counterfactual.
+
+SECTION 5: EXAMPLES OF INTERCURRENT EVENT HANDLING
+
+5.1 Treatment Discontinuation
+For oncology trials, a common estimand uses a composite variable strategy: subjects who discontinue treatment for toxicity and then progress are assigned the event date at the time of discontinuation. This conservative approach reflects the reality that treatment-limiting toxicity is clinically meaningful.
+
+5.2 Rescue Medication
+For trials in chronic diseases where rescue medication is permitted, the treatment policy strategy is often appropriate: outcomes are measured regardless of rescue medication use, reflecting the effectiveness of the treatment as used in practice.
+
+5.3 Death as an Intercurrent Event
+In trials with continuous endpoints (e.g., change in a symptom score), death prior to the planned assessment prevents the endpoint from being observed. The composite variable strategy may assign a worst-rank value to subjects who die, or a hypothetical strategy may model what the outcome would have been absent death.
+
+SECTION 6: REGULATORY EXPECTATIONS
+
+Regulatory agencies expect sponsors to provide a clear description of the estimand in the protocol and SAP. The estimand discussion should be sufficiently detailed that a reviewer understands precisely what the primary analysis estimates and why the chosen strategy for each intercurrent event is appropriate given the clinical context. The European Medicines Agency (EMA) and the FDA have both endorsed the estimand framework as the standard for confirmatory trial design and analysis.
+
+SECTION 7: SENSITIVITY ANALYSIS PLANNING
+
+A pre-specified sensitivity analysis plan should address: the impact of missing data not at random, the plausibility of the MAR assumption for the primary analysis, and alternative intercurrent event strategies. For example, if the primary estimand uses a treatment policy strategy, a sensitivity analysis using a hypothetical strategy (imputing the counterfactual without the intercurrent event) provides complementary information about the treatment's biological effect.

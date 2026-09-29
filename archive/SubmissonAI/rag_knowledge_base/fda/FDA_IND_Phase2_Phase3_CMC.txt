@@ -1,0 +1,64 @@
+FDA GUIDANCE: INDS FOR PHASE 2 AND PHASE 3 STUDIES: CHEMISTRY, MANUFACTURING, AND CONTROLS (CMC) INFORMATION
+Effective Date: May 1, 2003
+Regulatory Body: FDA (U.S. Food and Drug Administration)
+
+SECTION 1: INTRODUCTION
+
+This guidance describes the chemistry, manufacturing, and controls (CMC) information that FDA recommends sponsors provide in INDs for Phase 2 and Phase 3 studies. CMC information is Module 3 of the eCTD submission and includes all technical data related to the composition, manufacture, and quality of the drug substance and drug product.
+
+The degree of CMC detail required at the IND stage is less than at the NDA/BLA stage, but it must be sufficient to ensure the safety of clinical trial subjects and to ensure that the investigational product used in the trial is adequately characterized and consistently manufactured.
+
+SECTION 2: DRUG SUBSTANCE (MODULE 3.2.S)
+
+2.1 General Information
+The drug substance section must identify the drug substance by name (established name and chemical name), structural formula, molecular formula, molecular weight, and physicochemical properties. The proposed nonproprietary name (USAN) should be noted if one has been applied for.
+
+2.2 Manufacturer
+The name, address, and responsibilities of all manufacturers of the drug substance must be provided. If the drug substance is manufactured at multiple facilities, the roles of each facility must be specified.
+
+2.3 Description of Manufacturing Process
+A brief description of the synthesis route or isolation procedure for the drug substance must be provided. For Phase 2 submissions, a general process description with identification of critical steps and key intermediates is acceptable. For Phase 3 submissions, a more detailed process flow diagram, identification of process controls at each step, and justification of critical step parameters are expected.
+
+2.4 Characterization
+The structural characterization of the drug substance must confirm the proposed structure using a combination of spectroscopic and analytical methods appropriate to the compound. Enantiomeric purity and polymorphic form must be specified when they are relevant to safety or efficacy.
+
+2.5 Specifications
+Specifications for the drug substance must include tests for identity, assay, purity (including related substances/degradants), residual solvents, and any other attributes relevant to safety or quality. Specification limits must be justified based on batch data from manufacturing and, for impurities, based on qualification from toxicology studies.
+
+2.6 Stability
+Stability data must demonstrate that the drug substance is stable under the conditions used for storage and transport. The stability program must use ICH-appropriate conditions (e.g., ICH Q1A zones). For Phase 2 submissions, real-time and accelerated stability data covering the expected clinical trial duration are expected. For Phase 3 submissions, the stability data must support the proposed shelf life for the drug substance.
+
+2.7 Control of Impurities
+Known impurities and degradation products must be identified and controlled. Any impurity present at levels above the ICH Q3A threshold requires qualification from nonclinical studies demonstrating safety at the levels proposed in the specification. Novel impurities not previously observed must be controlled to qualification levels unless higher limits are justified by nonclinical data.
+
+SECTION 3: DRUG PRODUCT (MODULE 3.2.P)
+
+3.1 Description and Composition
+The complete composition of the drug product including all excipients, their functions, and their levels must be provided. The proposed dosage form, strength(s), and route of administration must be specified.
+
+3.2 Pharmaceutical Development
+The pharmaceutical development section explains the rationale for the formulation design and the choice of excipients. For Phase 2, a brief summary of the key formulation parameters and their justification is acceptable. For Phase 3, a more comprehensive discussion of the formulation development studies, the impact of formulation on PK/PD, and the relationship between the clinical formulation and the to-be-marketed formulation is expected.
+
+3.3 Manufacturing Process
+The manufacturing process description must identify critical manufacturing steps and controls. For Phase 3, in-process controls, acceptance criteria, and a process validation strategy must be included. The clinical trial material must be representative of the intended commercial formulation to the extent feasible at this stage of development.
+
+3.4 Specifications and Analytical Methods
+Drug product specifications must include tests for appearance, identity, assay, content uniformity, dissolution, degradation products, water content, and any other product-specific attributes. Analytical methods must be described and, for Phase 3, must be validated per ICH Q2(R1).
+
+3.5 Container Closure System
+The container closure system (primary packaging) must be described. For Phase 2, a brief description with materials of construction is sufficient. For Phase 3, extractables and leachables studies and compatibility data are typically expected.
+
+3.6 Stability
+Stability data for the drug product must support the proposed shelf life for the duration of the clinical trial. Both real-time and accelerated stability studies under ICH conditions must be initiated. For Phase 3, stability data from at least one pivotal batch (representative scale) must be available.
+
+SECTION 4: CMC CHANGES DURING CLINICAL DEVELOPMENT
+
+4.1 IND Amendments
+Any change in the drug substance manufacturer, the drug product manufacturer, the formulation, the manufacturing process, or the specifications during the IND phase requires an IND amendment. The amendment must describe the change, provide data demonstrating the equivalence of pre- and post-change material, and, where applicable, provide bridging pharmacokinetic data.
+
+4.2 Phase 3 Formulation Lock
+Before initiation of Phase 3 studies, the formulation and manufacturing process should be finalized ("locked") to the extent feasible. Significant formulation changes during Phase 3 require comparative bioavailability studies to ensure the Phase 3 formulation adequately represents the to-be-marketed formulation.
+
+SECTION 5: RELATIONSHIP TO NDA/BLA CMC SUBMISSION
+
+The CMC information submitted during IND development is the foundation for Module 3 of the NDA/BLA. Sponsors should plan their CMC development activities with the NDA/BLA requirements in mind, ensuring that the data collected during development (manufacturing data, validation data, stability data, analytical method validation data) will meet NDA/BLA standards. Deficiencies in CMC planning during the IND phase can result in significant delays in NDA/BLA review.
